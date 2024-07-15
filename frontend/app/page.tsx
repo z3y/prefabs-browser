@@ -6,7 +6,8 @@ import PrefabListing from "./components/PrefabListing";
 
 function PrefabsGrid() {
   return (
-    <div className="absolute p-4 grid gap-6 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2">
+    <div className="flex justify-center">
+    <div className="absolute p-4 grid gap-4 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2">
       <PrefabListing name={"Lit Shaders"} creator={"z3y"} date={"12/11/2022"} image={"/logo.png"} />
       <PrefabListing name={"Lit Shaders"} creator={"z3y"} date={"12/11/2022"} image={"/logo.png"} />
       <PrefabListing name={"Lit Shaders"} creator={"z3y"} date={"12/11/2022"} image={"/logo.png"} description="Extremely performant Quest water shader that reflects the skybox or surroundings and has animated water ripples, written for the Bamboo Temple world, looks great on PC too" />
@@ -14,12 +15,24 @@ function PrefabsGrid() {
       <PrefabListing name={"VRCMarker"} creator={"z3y"} date={"15/07/2024"} image={"/thumbnail.webp"} description="Extremely performant Quest water shader that reflects the skybox or surroundings and has animated water ripples, written for the Bamboo Temple world, looks great on PC too" />
       <PrefabListing name={"VRCMarker"} creator={"z3y"} date={"15/07/2024"} image={"/thumbnail.webp"} />
       <PrefabListing name={"VRCMarker"} creator={"z3y"} date={"15/07/2024"} image={"/thumbnail.webp"} />
-      <PrefabListing name={"VRCMarker"} creator={"z3y"} date={"15/07/2024"} image={"/thumbnail.webp"} description="This is a GLSL shader I converted to HLSL and debugged for unity made by Shane"/>
-      <PrefabListing name={"VRCMarker"} creator={"z3y"} date={"15/07/2024"} image={"/thumbnail.webp"} />
+      <PrefabListing name={"VRCMarker"} creator={"z3y"} date={"15/07/2024"} image={"/2.png"} description="This is a GLSL shader I converted to HLSL and debugged for unity made by Shane"/>
+      <PrefabListing name={"VRCMarker"} creator={"z3y"} date={"15/07/2024"} image={"/test.png"} />
       <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
       <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
       <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
       <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
+      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
+      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
+      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
+      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
+      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
+      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
+      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
+      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
+      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
+      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
+      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} image={"/poi.png"} />
+    </div>
     </div>
     );
 }
