@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react";
 import Prefab from "./Prefab";
 
 interface TagDescription {
@@ -10,9 +11,9 @@ interface TagDescription {
 function Tag(desc: TagDescription) {
 
     return (
-    <div className="font-semibold w-fit">
+    <div className="w-fit">
         <a href={desc.link} className="">
-            <div className=" bg-zinc-950 hover:bg-slate-600 transition duration-100 bg-opacity-50 text-gray-200 text-sm p-1 rounded border border-zinc-600 border-opacity-50">
+            <div className=" bg-zinc-950 hover:bg-slate-600 transition duration-100 bg-opacity-50 text-zinc-200 text-sm p-1 rounded border border-zinc-600 border-opacity-50">
                 <p className="pl-1 pr-1">{desc.name}</p>
             </div>
         </a>
@@ -61,12 +62,20 @@ function PrefabListingFull(prefab: Prefab) {
                     
                     <p className="p-2 pt-0 text-sm text-zinc-300">{desc}</p>
 
-                    <div className="p-2 font-semibold absolute bottom-2 right-2">
-                        <a href={prefab.link} target="_blank" rel="noopener noreferrer" className="">
-                            <div className=" bg-zinc-950 hover:bg-slate-600 transition duration-100 bg-opacity-50 text-gray-200 text-sm p-2 rounded border border-zinc-600 border-opacity-50">
+                </div>
+
+                <div className="flex flex-row-reverse p-4 gap-2 relative">
+                    
+                    <div className="font-semibold">
+                        <a href={prefab.link} target="_blank" rel="noopener noreferrer" className="w-16">
+                            <div className=" bg-zinc-950 hover:bg-slate-600 transition duration-100 bg-opacity-50 text-zinc-200 text-sm p-2 rounded border border-zinc-600 border-opacity-50">
                                 <p className="pl-1 pr-1">Download</p>
                             </div>
                         </a>
+                    </div>
+
+                    <div className="absolute left-2 bottom-6">
+                        <p className="text-sm text-zinc-300">{prefab.date}</p>
                     </div>
 
                 </div>

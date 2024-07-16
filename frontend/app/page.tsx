@@ -28,7 +28,7 @@ export default function Home() {
     <div className="p-4">
     <PrefabListingFull name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} link="https://github.com/poiyomi/PoiyomiToonShader" />
 
-    <PrefabListingFull name={"Lit Shaders"} creator={"z3y"} date={"12/11/2022"} link="https://github.com/poiyomi/PoiyomiToonShader" image={"/test.png"} description="Extremely performant Quest water shader that reflects the skybox or surroundings and has animated water ripples, written for the Bamboo Temple world, looks great on PC too" />
+    {/* <PrefabListingFull name={"Lit Shaders"} creator={"z3y"} date={"12/11/2022"} link="https://github.com/poiyomi/PoiyomiToonShader" image={"/test.png"} description="Extremely performant Quest water shader that reflects the skybox or surroundings and has animated water ripples, written for the Bamboo Temple world, looks great on PC too" /> */}
     </div>
     </>
   );
