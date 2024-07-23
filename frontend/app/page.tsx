@@ -1,147 +1,57 @@
-import Image from "next/image";
+"use client"
 
-import PrefabListing from "./components/PrefabListing";
-import PrefabListingFull from "./components/PrefabListingFull";
+import PrefabData, { prefabTestData } from "@/components/Prefab"
+import PrefabListingFull from "@/components/PrefabListingFull"
+import SearchOptions from "@/components/SearchOptions"
+import { SetStateAction, useState } from "react"
 
-
-
-function PrefabsGrid() {
+function Main() {
   return (
-    <div className="flex justify-center">
-    <div className="absolute p-4 grid gap-4 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2">
-      <PrefabListing name={"Lit Shaders"} creator={"z3y"} date={"12/11/2022"} link="https://github.com/poiyomi/PoiyomiToonShader" image={"/logo.png"} description="Extremely performant Quest water shader that reflects the skybox or surroundings and has animated water ripples, written for the Bamboo Temple world, looks great on PC too" />
-      <PrefabListing name={"VRCMarker"} creator={"z3y"} date={"15/07/2024"} link="https://github.com/poiyomi/PoiyomiToonShader" image={"/thumbnail.webp"} description="Extremely performant Quest water shader that reflects the skybox or surroundings and has animated water ripples, written for the Bamboo Temple world, looks great on PC too" />
-      <PrefabListing name={"VRCMarker"} creator={"z3y"} date={"15/07/2024"} link="https://github.com/poiyomi/PoiyomiToonShader" image={"/2.png"} description="This is a GLSL shader I converted to HLSL and debugged for unity made by Shane"/>
-      <PrefabListing name={"VRCMarker"} creator={"z3y"} date={"15/07/2024"} link="https://github.com/poiyomi/PoiyomiToonShader" image={"/test.png"} />
-      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} link="https://github.com/poiyomi/PoiyomiToonShader" image={"/poi.png"} />
-      <PrefabListing name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} link="https://github.com/poiyomi/PoiyomiToonShader" />
+    <div className="justify-center flex ">
+      <div
+        className={
+          "pt-16 pb-16 grid gap-4 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2"
+        }
+      >
+        {prefabTestData.map((x) => (
+          <PrefabListingFull {...x} />
+        ))}
+      </div>
+
+      <div
+        id="search bar"
+        className="fixed bg-opacity-95 backdrop-blur-md bg-zinc-900 rounded-lg top-6 min-h-20 p-4 border-2 border-zinc-600 border-opacity-50 content-center"
+      >
+        <h1>Search</h1>
+      </div>
     </div>
-    </div>
-    );
+  )
 }
 
 export default function Home() {
-
   return (
-    <>
-    {/* <PrefabsGrid /> */}
-    <div className="p-4">
-    <PrefabListingFull name={"Poiyomi Shaders"} creator={"Poiyomi"} date={"12/11/2024"} link="https://github.com/poiyomi/PoiyomiToonShader" />
-
-    {/* <PrefabListingFull name={"Lit Shaders"} creator={"z3y"} date={"12/11/2022"} link="https://github.com/poiyomi/PoiyomiToonShader" image={"/test.png"} description="Extremely performant Quest water shader that reflects the skybox or surroundings and has animated water ripples, written for the Bamboo Temple world, looks great on PC too" /> */}
-    </div>
-    </>
-  );
+    <main className="bg-zinc-950 h-full overflow-auto">
+      <div
+        id="list-content"
+        className="h-full flex flex-row max-w-[1300px] mx-auto"
+      >
+        <div
+          id="search-options"
+          className="relative min-w-80 border-r border-l border-zinc-800 hidden lg:block"
+        >
+          <div className="fixed min-w-80 top-0 p-4">
+            <SearchOptions />
+          </div>
+        </div>
+        <div
+          id="prefabs-list"
+          className="grow flex flex-col border-r border-zinc-800"
+        >
+          {prefabTestData.map((x) => (
+            <PrefabListingFull {...x} />
+          ))}
+        </div>
+      </div>
+    </main>
+  )
 }
-
-// export default function Home() {
-//   return (
-//     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-//       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-//         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-//           Get started by editing&nbsp;
-//           <code className="font-mono font-bold">app/page.tsx</code>
-//         </p>
-//         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-//           <a
-//             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-//             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             By{" "}
-//             <Image
-//               src="/vercel.svg"
-//               alt="Vercel Logo"
-//               className="dark:invert"
-//               width={100}
-//               height={24}
-//               priority
-//             />
-//           </a>
-//         </div>
-//       </div>
-
-//       <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-//         <Image
-//           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-//           src="/next.svg"
-//           alt="Next.js Logo"
-//           width={180}
-//           height={37}
-//           priority
-//         />
-//       </div>
-
-//       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-//         <a
-//           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-//           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <h2 className="mb-3 text-2xl font-semibold">
-//             Docs{" "}
-//             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-//               -&gt;
-//             </span>
-//           </h2>
-//           <p className="m-0 max-w-[30ch] text-sm opacity-50">
-//             Find in-depth information about Next.js features and API.
-//           </p>
-//         </a>
-
-//         <a
-//           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <h2 className="mb-3 text-2xl font-semibold">
-//             Learn{" "}
-//             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-//               -&gt;
-//             </span>
-//           </h2>
-//           <p className="m-0 max-w-[30ch] text-sm opacity-50">
-//             Learn about Next.js in an interactive course with&nbsp;quizzes!
-//           </p>
-//         </a>
-
-//         <a
-//           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-//           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <h2 className="mb-3 text-2xl font-semibold">
-//             Templates{" "}
-//             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-//               -&gt;
-//             </span>
-//           </h2>
-//           <p className="m-0 max-w-[30ch] text-sm opacity-50">
-//             Explore starter templates for Next.js.
-//           </p>
-//         </a>
-
-//         <a
-//           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-//           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <h2 className="mb-3 text-2xl font-semibold">
-//             Deploy{" "}
-//             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-//               -&gt;
-//             </span>
-//           </h2>
-//           <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-//             Instantly deploy your Next.js site to a shareable URL with Vercel.
-//           </p>
-//         </a>
-//       </div>
-//     </main>
-//   );
-// }
