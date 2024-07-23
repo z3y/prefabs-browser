@@ -12,7 +12,7 @@ const SearchOptions = () => {
   return (
     <form className="flex flex-col gap-2 pt-1">
       <Input
-        className="bg-zinc-800 bg-opacity-0 border border-zinc-800 rounded-md p-4 focus:outline-none"
+        className="bg-zinc-950 border border-zinc-800 rounded-md p-4 focus:outline-none"
         type="text"
         id="search"
         name="prefab"
@@ -43,7 +43,7 @@ const SearchOptions = () => {
           <option value="any">Any</option>
           <option value="udon">Udon</option>
           <option value="avatar">Avatar</option>
-          <option value="tools">Tools</option>
+          <option value="tool">Tool</option>
           <option value="general">General Assets</option>
         </Select>
       </div>
@@ -51,8 +51,8 @@ const SearchOptions = () => {
       <div className="flex flex-row items-center gap-4">
         <p className="text-zinc-200 text-sm w-12">Creator</p>
         <Input
-          className="bg-zinc-950 bg-opacity-0 border border-zinc-800 rounded-md p-2 focus:outline-none w-56"
-          type="text2"
+          className="bg-zinc-950 border border-zinc-800 rounded-md p-2 focus:outline-none w-56"
+          type="text"
           id="search-creator"
           name="prefab-creator"
           placeholder=""

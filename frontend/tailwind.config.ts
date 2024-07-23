@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -15,13 +15,10 @@ const config: Config = {
       },
     },
     fontFamily: {
-      sans: [
-        '"Segoe UI"',
-        'Roboto',
-        'sans-serif',
-      ],
-    }
+      sans: ['"Segoe UI"', "Roboto", "sans-serif"],
+    },
   },
   plugins: [],
-};
-export default config;
+  darkMode: "class",
+}
+export default config

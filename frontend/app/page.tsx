@@ -39,7 +39,7 @@ export default function Home() {
           id="search-options"
           className="relative min-w-80 border-r border-l border-zinc-800 hidden lg:block"
         >
-          <div className="fixed min-w-80 top-0 p-4">
+          <div className="fixed min-w-80 p-4">
             <SearchOptions />
           </div>
         </div>
