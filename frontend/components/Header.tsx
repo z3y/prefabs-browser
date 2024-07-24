@@ -1,11 +1,15 @@
 import React from "react"
 import SearchOptions from "./SearchOptions"
+import Image from "next/image"
 
 const Header = () => {
   return (
     <header className="fixed z-20 bg-opacity-80 h-14 border-b border-zinc-800 backdrop-blur-md text-white bg-zinc-950 min-w-full">
       <div className="h-full max-w-[1300px] mx-auto items-center pl-8 pr-8 flex justify-between">
-        <p className="text-lg text-zinc-200 font-semibold">Prefabs Browser</p>
+        <div className="text-lg text-zinc-200 font-semibold flex flex-row items-center gap-2">
+          <Image src={"/main-logo.png"} alt={"logo"} width={28} height={28} />
+          <p>Prefabs Browser</p>
+        </div>
 
         <div className="flex flex-row gap-8 items-center">
           <SearchOptions />
