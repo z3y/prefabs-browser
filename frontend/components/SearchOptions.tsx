@@ -34,17 +34,19 @@ const SearchOptions = () => {
       autoComplete="off"
       onSubmit={handleSearch}
     >
-      <div className="flex flex-row rounded-xl bg-zinc-900 items-center">
-        <Image
-          src="/Magnifier2.svg"
-          width={18}
-          height={18}
-          className="text-zinc-200 ml-3 opacity-80"
-          alt={"search"}
-        />
+      <div className="flex flex-row rounded-xl bg-zinc-900  hover:bg-blue-600 border-opacity-0 hover:border-opacity-100 border  transition-colors duration-100 border-zinc-700 items-center">
+        <button type="submit">
+          <Image
+            src="/Magnifier2.svg"
+            width={18}
+            height={18}
+            className="text-zinc-200 ml-3 opacity-80"
+            alt={"search"}
+          />
+        </button>
 
         <input
-          className="appearance-none bg-zinc-900 rounded-r-xl py-2 px-3 text-zinc-200 outline-none text-center text-sm"
+          className=" enabled:bg-slate-700 enabled:bg-opacity-0 fill-none py-2 px-3 text-zinc-200 placeholder:text-zinc-400 outline-none text-center text-sm"
           type="text"
           id="search"
           name="prefab"
@@ -52,7 +54,7 @@ const SearchOptions = () => {
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
-        <button onClick={() => setSearchText("")}>
+        <button type="reset" onClick={() => setSearchText("")}>
           <Image
             src="/X.svg"
             width={18}
