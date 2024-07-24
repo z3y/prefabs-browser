@@ -36,6 +36,7 @@ const SortingPopover = () => {
         >
           {buttons.map((x, index) => (
             <button
+              key={index}
               className="hover:bg-zinc-800 p-2 rounded-md capitalize"
               onClick={() => handleSorting(x)}
             >
