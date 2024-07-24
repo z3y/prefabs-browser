@@ -3,6 +3,7 @@
 import { usePathname, useRouter, useSearchParams } from "next/navigation"
 import { useEffect, useState } from "react"
 import Image from "next/image"
+import SortingPopover from "./SortingPopover"
 
 const SearchOptions = () => {
   const searchParams = useSearchParams()
@@ -11,11 +12,13 @@ const SearchOptions = () => {
 
   const router = useRouter()
 
+  const previousName = searchParams.get("name")
+
   useEffect(() => {
     const previousName = searchParams.get("name")
-    setSearchText(previousName ?? "")
+    setSearchText(previousName || "")
     console.log("setting " + previousName)
-  }, [])
+  }, [previousName])
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -30,11 +33,11 @@ const SearchOptions = () => {
 
   return (
     <form
-      className="flex flex-row gap-2"
+      className="flex flex-row gap-4 items-center"
       autoComplete="off"
       onSubmit={handleSearch}
     >
-      <div className="flex flex-row rounded-xl bg-zinc-900  hover:bg-blue-600 border-opacity-0 hover:border-opacity-100 border  transition-colors duration-100 border-zinc-700 items-center">
+      <div className="lg:w-80 flex flex-row rounded-xl bg-zinc-900  hover:bg-blue-600 border-opacity-0 hover:border-opacity-100 border  transition-colors duration-150 border-zinc-700 items-center">
         <button type="submit">
           <Image
             src="/Magnifier2.svg"
@@ -46,7 +49,7 @@ const SearchOptions = () => {
         </button>
 
         <input
-          className=" enabled:bg-slate-700 enabled:bg-opacity-0 fill-none py-2 px-3 text-zinc-200 placeholder:text-zinc-400 outline-none text-center text-sm"
+          className="grow enabled:bg-slate-700 enabled:bg-opacity-0 fill-none py-1.5 px-3 text-zinc-200 placeholder:text-zinc-400 outline-none text-center text-sm"
           type="text"
           id="search"
           name="prefab"
@@ -62,10 +65,12 @@ const SearchOptions = () => {
             className={`text-zinc-200 mr-3 ${
               searchText === "" ? "opacity-0" : "opacity-80"
             }`}
-            alt={"search"}
+            alt={"x"}
           />
         </button>
       </div>
+
+      <SortingPopover />
 
       {/* <div className="flex flex-row items-center gap-4 pt-4">
           <p className="text-zinc-200 text-sm w-12">Sorting</p>

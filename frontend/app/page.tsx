@@ -6,11 +6,11 @@ import { useSearchParams } from "next/navigation"
 import { useEffect } from "react"
 
 export default function Home() {
-  const searchParams = useSearchParams()
+  // const searchParams = useSearchParams()
 
-  useEffect(() => {
-    console.log(searchParams.toString())
-  }, [searchParams.get("name")])
+  // useEffect(() => {
+  //   console.log(searchParams.toString())
+  // }, [searchParams.get("name")])
 
   return (
     <main className="bg-zinc-950 h-full overflow-auto">
