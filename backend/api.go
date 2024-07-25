@@ -1,0 +1,112 @@
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	"log"
+	"net/http"
+	"strings"
+	"time"
+)
+
+type Api struct {
+	listenAddr string
+	storage    *Storage
+}
+
+func (a *Api) Run() {
+
+	http.HandleFunc("GET /search", a.handleSearch)
+	http.HandleFunc("POST /prefab", a.handleNewPrefab)
+
+	log.Fatal(http.ListenAndServe(a.listenAddr, nil))
+}
+
+func writeJson(w http.ResponseWriter, status int, v any) error {
+	w.Header().Add("Content-Type", "application/json")
+	w.WriteHeader(status)
+	return json.NewEncoder(w).Encode(v)
+}
+
+type Prefab struct {
+	Id          string    `json:"id,omitempty"`
+	Name        string    `json:"name,omitempty"`
+	Category    string    `json:"category,omitempty"`
+	Creator     string    `json:"creator,omitempty"`
+	Link        string    `json:"link,omitempty"`
+	Description string    `json:"description,omitempty"`
+	Thumbnail   string    `json:"thumbnail,omitempty"`
+	Added       time.Time `json:"added,omitempty"`
+}
+
+func (a *Api) handleNewPrefab(w http.ResponseWriter, r *http.Request) {
+
+	result := Prefab{}
+
+	if err := json.NewDecoder(r.Body).Decode(&result); err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	if result.Name == "" || result.Category == "" || result.Creator == "" || result.Link == "" {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	a.storage.NewPrefab(&result)
+}
+
+func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
+
+	name := r.URL.Query().Get("name")
+	category := r.URL.Query().Get("category")
+	// sorting := r.URL.Query().Get("sorting")
+	
+	query := `select id, name, category, creator, link, description, thumbnail, added from prefabs`
+
+	conditions := []string{}
+	args := []any{}
+
+	if name != "" {
+		args = append(args, name)
+		conditions = append(conditions, fmt.Sprintf("name like $%d", len(args)))
+	}
+	if category != "" {
+		args = append(args, category)
+		conditions = append(conditions,  fmt.Sprintf("category = $%d", len(args)))
+	}
+
+	if len(conditions) > 0 {
+		query += " WHERE " + strings.Join(conditions, " and ")
+	}
+
+	query += " order by added desc"
+
+
+	rows, err := a.storage.db.Query(
+		query,
+		args...)
+
+
+	if err != nil {
+		log.Println(err)
+		return 
+	}
+	defer rows.Close()
+		
+	result := []Prefab{}
+
+	for rows.Next() {
+		p := Prefab{}
+
+		err = rows.Scan(&p.Id, &p.Name, &p.Category, &p.Creator, &p.Link, &p.Description, &p.Thumbnail, &p.Added)
+		if err != nil {
+			log.Println(err)
+		} else {
+			result = append(result, p)
+		}
+	}
+
+	writeJson(w, http.StatusOK, result)
+
+}

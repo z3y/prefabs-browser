@@ -30,10 +30,9 @@ const SearchOptions = () => {
 
     router.push(newPath)
   }
-
   return (
     <form
-      className="flex flex-row gap-4 items-center"
+      className="flex flex-row  gap-4 items-center"
       autoComplete="off"
       onSubmit={handleSearch}
     >

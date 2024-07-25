@@ -33,12 +33,12 @@ const CategorySelection = () => {
   }
 
   return (
-    <div
-      className={`${categories[category].color} bg- outline-none py-1.5 px-3 rounded-xl items-center flex justify-center transition-colors duration-300 w-24`}
-    >
-      <Popover className="relative">
-        <PopoverButton>
-          <p className="font-bold capitalize">{categories[category].name}</p>
+    <Popover className="relative">
+      <div
+        className={`${categories[category].color} bg-opacity-100 hover:bg-opacity-90  outline-none  rounded-xl items-center flex justify-center transition-colors duration-300 w-24`}
+      >
+        <PopoverButton className="py-1.5 px-3">
+          <p className="font-bold capitalize ">{categories[category].name}</p>
         </PopoverButton>
         <PopoverPanel
           anchor="bottom"
@@ -54,8 +54,8 @@ const CategorySelection = () => {
             </button>
           ))}
         </PopoverPanel>
-      </Popover>
-    </div>
+      </div>
+    </Popover>
   )
 }
 
