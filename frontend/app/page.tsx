@@ -1,16 +1,30 @@
 "use client"
 
-import PrefabData, { prefabTestData } from "@/components/Prefab"
+import PrefabData from "@/components/Prefab"
 import PrefabListingFull from "@/components/PrefabListingFull"
 import { useSearchParams } from "next/navigation"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 export default function Home() {
-  // const searchParams = useSearchParams()
+  const searchParams = useSearchParams()
 
-  // useEffect(() => {
-  //   console.log(searchParams.toString())
-  // }, [searchParams.get("name")])
+  const [prefabs, setPrefabs] = useState<PrefabData[]>()
+
+  useEffect(() => {
+    const url = `http://localhost:3000/search?name=${searchParams.get("name")}&category=${searchParams.get("category")}`
+    try {
+      fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        setPrefabs(data)
+      })
+    }
+    catch (e){
+      console.log(e)
+    }
+    
+  }, [searchParams])
+  
 
   return (
     <main className="bg-zinc-950 h-full overflow-auto">
@@ -22,8 +36,8 @@ export default function Home() {
           id="prefabs-list"
           className="grow flex flex-col border-r border-l border-zinc-800"
         >
-          {prefabTestData.map((x, index) => (
-            <PrefabListingFull {...x} key={index} />
+          {prefabs && prefabs.map((x) => (
+            <PrefabListingFull {...x} key={x.id} />
           ))}
         </div>
       </div>

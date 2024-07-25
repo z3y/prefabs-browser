@@ -23,7 +23,7 @@ function PrefabListingFull(prefab: PrefabData) {
       ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at consequat ante. Vestibulum venenatis eros eu quam sollicitudin, nec feugiat est iaculis. Integer mollis in diam ut hendrerit"
       : prefab.description
   const imageScr =
-    prefab.image == null ? "/missing-thumbnail.png" : prefab.image
+    prefab.thumbnail == null ? "/missing-thumbnail.png" : prefab.thumbnail
 
   return (
     <div className="bg-zinc-950 hover:bg-zinc-900 flex-row flex border-b border-zinc-800">
@@ -72,7 +72,7 @@ function PrefabListingFull(prefab: PrefabData) {
           </div>
 
           <div className="absolute left-2 bottom-6">
-            <p className="text-xs text-zinc-300">{prefab.date}</p>
+            <p className="text-xs text-zinc-300">{prefab.added}</p>
           </div>
         </div>
       </div>

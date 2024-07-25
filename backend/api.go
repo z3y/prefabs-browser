@@ -7,6 +7,8 @@ import (
 	"net/http"
 	"strings"
 	"time"
+
+	"github.com/rs/cors"
 )
 
 type Api struct {
@@ -16,10 +18,14 @@ type Api struct {
 
 func (a *Api) Run() {
 
-	http.HandleFunc("GET /search", a.handleSearch)
-	http.HandleFunc("POST /prefab", a.handleNewPrefab)
+	mux := http.NewServeMux()
 
-	log.Fatal(http.ListenAndServe(a.listenAddr, nil))
+	mux.HandleFunc("GET /search", a.handleSearch)
+	mux.HandleFunc("POST /prefab", a.handleNewPrefab)
+
+    handler := cors.Default().Handler(mux)
+
+	log.Fatal(http.ListenAndServe(a.listenAddr, handler))
 }
 
 func writeJson(w http.ResponseWriter, status int, v any) error {
@@ -61,6 +67,7 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 	name := r.URL.Query().Get("name")
 	category := r.URL.Query().Get("category")
 	// sorting := r.URL.Query().Get("sorting")
+
 	
 	query := `select id, name, category, creator, link, description, thumbnail, added from prefabs`
 
@@ -68,6 +75,7 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 	args := []any{}
 
 	if name != "" {
+		name = "%" + name + "%"
 		args = append(args, name)
 		conditions = append(conditions, fmt.Sprintf("name like $%d", len(args)))
 	}
@@ -106,6 +114,8 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 			result = append(result, p)
 		}
 	}
+
+	log.Printf("Searching for name: %s, category: %s; found: %d results", name, category, len(result))
 
 	writeJson(w, http.StatusOK, result)
 
