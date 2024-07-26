@@ -11,7 +11,7 @@ export default function Home() {
   const [prefabs, setPrefabs] = useState<PrefabData[]>()
 
   useEffect(() => {
-    const url = `http://localhost:3000/search?name=${searchParams.get("name")}&category=${searchParams.get("category")}`
+    const url = `http://localhost:3000/search?name=${searchParams.get("name")}&category=${searchParams.get("category")}&sorting=${searchParams.get("sorting")}`
     try {
       fetch(url)
       .then((res) => res.json())
@@ -34,7 +34,7 @@ export default function Home() {
       >
         <div
           id="prefabs-list"
-          className="grow flex flex-col border-r border-l border-zinc-800"
+          className="grow flex flex-col border-r border-l border-zinc-800 min-h-screen"
         >
           {prefabs && prefabs.map((x) => (
             <PrefabListingFull {...x} key={x.id} />

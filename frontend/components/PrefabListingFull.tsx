@@ -9,7 +9,7 @@ function Tag(desc: TagDescription) {
   return (
     <div className="w-fit">
       <a href={desc.link} className="">
-        <button className=" bg-zinc-950 hover:bg-blue-600 transition duration-100 bg-opacity-50 text-zinc-200 text-sm p-1 rounded border border-zinc-600 border-opacity-50">
+        <button className=" bg-zinc-950 capitalize hover:bg-blue-600 transition duration-100 bg-opacity-50 text-zinc-200 text-sm p-1 rounded border border-zinc-600 border-opacity-50">
           <p className="pl-1 pr-1">{desc.name}</p>
         </button>
       </a>
@@ -48,8 +48,7 @@ function PrefabListingFull(prefab: PrefabData) {
           </div>
 
           <div className="absolute flex-row flex gap-1 right-4">
-            <Tag name={"Tag"} link={"test"} />
-            <Tag name={"Shader"} link={"test"} />
+            <Tag name={prefab.category} link={"test"} />
           </div>
         </div>
 

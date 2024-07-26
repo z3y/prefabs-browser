@@ -9,19 +9,6 @@ interface PrefabData {
   link: string
 }
 
-// export async function fetchPrefabs(search: URLSearchParams) {
-//   // const headers = {
-//   // }
-
-//   const response = await fetch(
-//     `http://localhost:3000/search?name=${search.get("name")}&category=${search.get("category")}`,
-//     // { headers: headers }
-//   )
-
-//   const result = await response.json()
-//   return result
-// }
-
 export default PrefabData
 
 // export const prefabTestData: PrefabData[] = [

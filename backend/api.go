@@ -66,7 +66,12 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 
 	name := r.URL.Query().Get("name")
 	category := r.URL.Query().Get("category")
-	// sorting := r.URL.Query().Get("sorting")
+	sortingQ := r.URL.Query().Get("sorting")
+
+	sorting := "desc";
+	if sortingQ == "old" {
+		sorting = "asc"
+	}
 
 	
 	query := `select id, name, category, creator, link, description, thumbnail, added from prefabs`
@@ -74,12 +79,14 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 	conditions := []string{}
 	args := []any{}
 
-	if name != "" {
+
+
+	if name != "" && name != "null" {
 		name = "%" + name + "%"
 		args = append(args, name)
 		conditions = append(conditions, fmt.Sprintf("name like $%d", len(args)))
 	}
-	if category != "" {
+	if category != "" && category != "null" {
 		args = append(args, category)
 		conditions = append(conditions,  fmt.Sprintf("category = $%d", len(args)))
 	}
@@ -88,7 +95,7 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 		query += " WHERE " + strings.Join(conditions, " and ")
 	}
 
-	query += " order by added desc"
+	query += fmt.Sprintf(" order by added %s", sorting)
 
 
 	rows, err := a.storage.db.Query(
