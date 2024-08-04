@@ -68,6 +68,7 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 	name := r.URL.Query().Get("name")
 	category := r.URL.Query().Get("category")
 	sortingQ := r.URL.Query().Get("sort")
+	name = strings.TrimSpace(name)
 
 	sorting := "desc";
 	if sortingQ == "old" {
