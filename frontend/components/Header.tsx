@@ -10,7 +10,7 @@ const Header = () => {
   const router = useRouter()
 
   return (
-    <header className="fixed z-20 bg-opacity-80 h-16 border-b border-zinc-800 backdrop-blur-md text-white bg-zinc-950 min-w-full shadow-md shadow-black ">
+    <header className="fixed z-20 bg-opacity-80 h-16  backdrop-blur-md text-white bg-zinc-950 min-w-full border-b border-zinc-800">
       <div className="h-full max-w-[1300px] mx-auto items-center pl-8 pr-8 flex justify-between">
         <div className="flex flex-row items-center gap-8">
           <button type="button" onClick={() => router.push("/")}>

@@ -17,7 +17,7 @@ const SearchOptions = () => {
   useEffect(() => {
     const previousName = searchParams.get("name")
     setSearchText(previousName || "")
-    console.log("setting " + previousName)
+    // console.log("setting " + previousName)
   }, [previousName])
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {

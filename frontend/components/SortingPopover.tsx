@@ -1,3 +1,5 @@
+"use client"
+
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react"
 import React, { useState } from "react"
 import Image from "next/image"
@@ -8,7 +10,7 @@ const SortingPopover = () => {
 
   const handleSorting = (sorting: string) => {
     const searchParams = new URLSearchParams(window.location.search)
-    searchParams.set("sorting", sorting)
+    searchParams.set("sort", sorting)
     const newPath = `${window.location.pathname}?${searchParams.toString()}`
     router.push(newPath)
   }

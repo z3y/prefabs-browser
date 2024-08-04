@@ -1,3 +1,6 @@
+"use client"
+
+
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react"
 import { useRouter, useSearchParams } from "next/navigation"
 import React, { useEffect, useState } from "react"

@@ -18,15 +18,21 @@ function Tag(desc: TagDescription) {
 }
 
 function PrefabListingFull(prefab: PrefabData) {
-  const desc =
-    prefab.description == null
-      ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at consequat ante. Vestibulum venenatis eros eu quam sollicitudin, nec feugiat est iaculis. Integer mollis in diam ut hendrerit"
-      : prefab.description
   const imageScr =
     prefab.thumbnail == null ? "/missing-thumbnail.png" : prefab.thumbnail
 
+  const now = Date.now()
+  const date = Date.parse(prefab.added)
+  const delta = (now - date) / 1000
+  let dateDisplay = prefab.added.split("T")[0]
+  if (delta < 60 * 60 * 24) {
+    dateDisplay = "Today"
+  } else if (delta < 60 * 60 * 24 * 2) {
+    dateDisplay = "Yesterday"
+  }
+
   return (
-    <div className="bg-zinc-950 hover:bg-zinc-900 flex-row flex border-b border-zinc-800">
+    <div className="bg-zinc-950 hover:bg-zinc-900 flex-row flex border-b border-x border-zinc-800">
       <div className="p-4 relative min-w-56 min-h-56 max-w-56 max-h-56">
         <div className="bg-zinc-800 rounded-md">
           <img
@@ -53,7 +59,7 @@ function PrefabListingFull(prefab: PrefabData) {
         </div>
 
         <div className="relative grow">
-          <p className="p-2 pt-0 text-sm text-zinc-300">{desc}</p>
+          <p className="p-2 pt-0 text-sm text-zinc-300">{prefab.description}</p>
         </div>
 
         <div className="flex flex-row-reverse p-4 gap-2 relative">
@@ -71,7 +77,7 @@ function PrefabListingFull(prefab: PrefabData) {
           </div>
 
           <div className="absolute left-2 bottom-6">
-            <p className="text-xs text-zinc-300">{prefab.added}</p>
+            <p className="text-xs text-zinc-300">{dateDisplay}</p>
           </div>
         </div>
       </div>
