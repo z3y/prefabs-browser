@@ -15,7 +15,7 @@ export default function Home() {
       "name"
     )}&category=${searchParams.get("category")}&sort=${searchParams.get(
       "sort"
-    )}`
+    )}&page=${searchParams.get("page")}`
     try {
       fetch(url)
         .then((res) => res.json())

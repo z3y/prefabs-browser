@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"strconv"
 	"strings"
 	"time"
 
@@ -68,12 +69,19 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 	name := r.URL.Query().Get("name")
 	category := r.URL.Query().Get("category")
 	sortingQ := r.URL.Query().Get("sort")
+	page := r.URL.Query().Get("page")
 	name = strings.TrimSpace(name)
 
 	sorting := "desc";
 	if sortingQ == "old" {
 		sorting = "asc"
 	}
+
+	pageNumber, err := strconv.Atoi(page)
+	if err != nil {
+		pageNumber = 0
+	}
+	
 
 	
 	query := `select id, name, category, creator, link, description, thumbnail, added from prefabs`
@@ -99,8 +107,8 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 	}
 
 	query += fmt.Sprintf(" order by added %s", sorting)
-
-	// query += " limit 10"
+	const limit = 25;
+	query += fmt.Sprintf(" limit %d offset %d", limit, pageNumber * limit)
 
 	rows, err := a.storage.db.Query(
 		query,
