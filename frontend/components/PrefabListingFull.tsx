@@ -32,7 +32,10 @@ function PrefabListingFull(prefab: PrefabData) {
   }
 
   return (
-    <div className="bg-zinc-950 hover:bg-zinc-900 flex-row flex border-b border-x border-zinc-800">
+    <div
+      id={prefab.id}
+      className="bg-zinc-950 hover:bg-zinc-900 flex-row flex border-b border-x border-zinc-800"
+    >
       <div className="p-4 relative min-w-56 min-h-56 max-w-56 max-h-56">
         <div className="bg-zinc-800 rounded-md">
           <img
