@@ -47,6 +47,11 @@ type Prefab struct {
 	Added       time.Time `json:"added,omitempty"`
 }
 
+type SearchResult struct {
+	Results []Prefab `json:"results"`
+	Pages int `json:"pages"`
+}
+
 func (a *Api) handleNewPrefab(w http.ResponseWriter, r *http.Request) {
 
 	result := Prefab{}
@@ -63,6 +68,7 @@ func (a *Api) handleNewPrefab(w http.ResponseWriter, r *http.Request) {
 
 	a.storage.NewPrefab(&result)
 }
+
 
 func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 
@@ -84,7 +90,7 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 	
 
 	
-	query := `select id, name, category, creator, link, description, thumbnail, added from prefabs`
+	query := `select id, name, category, creator, link, description, thumbnail, added, count(id) over() as pages from prefabs`
 
 	conditions := []string{}
 	args := []any{}
@@ -107,7 +113,7 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 	}
 
 	query += fmt.Sprintf(" order by added %s", sorting)
-	const limit = 25;
+	const limit = 15;
 	query += fmt.Sprintf(" limit %d offset %d", limit, pageNumber * limit)
 
 	rows, err := a.storage.db.Query(
@@ -122,20 +128,25 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 	}
 	defer rows.Close()
 		
-	result := []Prefab{}
-
+	results := []Prefab{}
+	
+	pages := 0
 	for rows.Next() {
 		p := Prefab{}
-
-		err = rows.Scan(&p.Id, &p.Name, &p.Category, &p.Creator, &p.Link, &p.Description, &p.Thumbnail, &p.Added)
+		err = rows.Scan(&p.Id, &p.Name, &p.Category, &p.Creator, &p.Link, &p.Description, &p.Thumbnail, &p.Added, &pages)
 		if err != nil {
 			log.Println(err)
 		} else {
-			result = append(result, p)
+			results = append(results, p)
 		}
 	}
 
-	log.Printf("Searching for name: %s, category: %s; found: %d results", name, category, len(result))
+	log.Printf("Searching for name: %s, category: %s; found: %d results", name, category, len(results))
+
+	result := SearchResult{
+		Results: results,
+		Pages: pages / limit,
+	}
 
 	writeJson(w, http.StatusOK, result)
 

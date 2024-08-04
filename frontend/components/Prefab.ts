@@ -9,6 +9,11 @@ interface PrefabData {
   link: string
 }
 
+export interface PrefabSearchResult {
+  results: PrefabData[]
+  pages: number
+}
+
 export default PrefabData
 
 // export const prefabTestData: PrefabData[] = [
