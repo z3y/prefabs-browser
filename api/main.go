@@ -15,7 +15,11 @@ func main() {
 	}
 
 	storage := Storage{}
-	storage.Connect(pgPassword)
+	err := storage.Connect(pgPassword)
+
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	log.Println("Connected to db")
 

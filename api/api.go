@@ -22,6 +22,7 @@ func (a *Api) Run() {
 
 	mux.HandleFunc("GET /search", a.handleSearch)
 	mux.HandleFunc("POST /prefab", a.handleNewPrefab)
+	mux.HandleFunc("DELETE /prefab", a.handleDelete)
 
     handler := cors.Default().Handler(mux)
 
@@ -66,7 +67,7 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 
 	name := r.URL.Query().Get("name")
 	category := r.URL.Query().Get("category")
-	sortingQ := r.URL.Query().Get("sorting")
+	sortingQ := r.URL.Query().Get("sort")
 
 	sorting := "desc";
 	if sortingQ == "old" {
@@ -105,6 +106,7 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		log.Println(err)
+		writeJson(w, http.StatusBadRequest, "")
 		return 
 	}
 	defer rows.Close()
@@ -126,4 +128,21 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 
 	writeJson(w, http.StatusOK, result)
 
+}
+
+func (a *Api) handleDelete(w http.ResponseWriter, r *http.Request) {
+
+	id := r.URL.Query().Get("id")
+	
+	query := "delete from prefabs where id = $1"
+	_, err := a.storage.db.Exec(query, id)
+
+	if err != nil {
+		log.Println(err)
+		writeJson(w, http.StatusBadRequest, "")
+		return 
+	}
+
+	log.Printf("Deleted prefab %s", id)
+	writeJson(w, http.StatusOK, "")
 }
