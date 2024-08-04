@@ -1,6 +1,5 @@
 "use client"
 
-
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react"
 import { useRouter, useSearchParams } from "next/navigation"
 import React, { useEffect, useState } from "react"
@@ -31,7 +30,7 @@ const CategorySelection = () => {
   const handleCategory = (category: string) => {
     const searchParams = new URLSearchParams(window.location.search)
     searchParams.set("category", category)
-    const newPath = `${window.location.pathname}?${searchParams.toString()}`
+    const newPath = `/?${searchParams.toString()}`
     router.push(newPath)
   }
 

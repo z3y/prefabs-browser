@@ -26,7 +26,7 @@ const SearchOptions = () => {
     const searchParams = new URLSearchParams(window.location.search)
     searchText && searchParams.set("name", searchText)
 
-    const newPath = `${window.location.pathname}?${searchParams.toString()}`
+    const newPath = `/?${searchParams.toString()}`
 
     router.push(newPath)
   }

@@ -11,7 +11,7 @@ const SortingPopover = () => {
   const handleSorting = (sorting: string) => {
     const searchParams = new URLSearchParams(window.location.search)
     searchParams.set("sort", sorting)
-    const newPath = `${window.location.pathname}?${searchParams.toString()}`
+    const newPath = `/?${searchParams.toString()}`
     router.push(newPath)
   }
 
