@@ -10,6 +10,8 @@ func main() {
 
 	pgPassword, exists := os.LookupEnv("POSTGRES_PASSWORD")
 
+
+
 	if !exists {
 		log.Fatal("POSTGRES_PASSWORD env not set")
 	}

@@ -8,7 +8,7 @@ interface TagDescription {
 function Tag(desc: TagDescription) {
   return (
     <div className="w-fit">
-      <a href={desc.link} className="">
+      <a href={"?category=" + desc.name} className="">
         <button className=" bg-zinc-950 capitalize hover:bg-blue-600 transition duration-100 bg-opacity-50 text-zinc-200 text-sm p-1 rounded border border-zinc-600 border-opacity-50">
           <p className="pl-1 pr-1">{desc.name}</p>
         </button>

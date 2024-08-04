@@ -83,9 +83,11 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 
 
 	if name != "" && name != "null" {
-		name = "%" + name + "%"
-		args = append(args, name)
-		conditions = append(conditions, fmt.Sprintf("name like $%d", len(args)))
+		args = append(args, strings.Join(strings.Fields(name), " & "))
+		l := len(args)
+		args = append(args, "%" + name + "%")
+		// conditions = append(conditions, fmt.Sprintf("lower(name) like lower($%d) or lower(creator) like lower($%d)", l, l))
+		conditions = append(conditions, fmt.Sprintf("lower(name) like lower($%d) or to_tsvector(name) @@ to_tsquery($%d) or lower(creator) like lower($%d) or to_tsvector(description) @@ to_tsquery($%d)", l + 1, l, l + 1, l))
 	}
 	if category != "" && category != "null" {
 		args = append(args, category)
@@ -98,6 +100,7 @@ func (a *Api) handleSearch(w http.ResponseWriter, r *http.Request) {
 
 	query += fmt.Sprintf(" order by added %s", sorting)
 
+	query += " limit 10"
 
 	rows, err := a.storage.db.Query(
 		query,
