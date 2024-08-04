@@ -36,7 +36,7 @@ function PrefabListingFull(prefab: PrefabData) {
       id={prefab.id}
       className="bg-zinc-950 hover:bg-zinc-900 flex-row flex border-b border-x border-zinc-800"
     >
-      <div className="p-4 relative min-w-56 min-h-56 max-w-56 max-h-56">
+      <div className="p-4 relative min-w-64 min-h-64 max-w-64 max-h-64">
         <div className="bg-zinc-800 rounded-md">
           <img
             src={imageScr}
@@ -44,9 +44,11 @@ function PrefabListingFull(prefab: PrefabData) {
             className="object-contain rounded-md"
           />
 
-          <div className="absolute bottom-6 right-6 backdrop-blur-sm bg-zinc-950 bg-opacity-50 text-zinc-200 text-sm p-1 rounded  border-zinc-600 border-opacity-50">
-            <p className="pl-1 pr-1">{prefab.creator}</p>
-          </div>
+          <a href={"?name=" + prefab.creator} rel="noopener noreferrer">
+            <div className="absolute bottom-6 right-6 backdrop-blur-sm bg-zinc-950 bg-opacity-50 text-zinc-200 text-sm p-1 rounded  border-zinc-600 border-opacity-50">
+              <p className="pl-1 pr-1">{prefab.creator}</p>
+            </div>
+          </a>
         </div>
       </div>
 

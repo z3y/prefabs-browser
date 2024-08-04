@@ -50,7 +50,8 @@ func main() {
 func inputFromCsv(sorage *Storage) {
 	csv := readCsvFile("data.csv")
 
-	for _, rows := range csv {
+	for i := len(csv)-1; i >= 0; i-- {
+		rows := csv[i]
 		name := strings.TrimSpace(rows[1])
 		creator :=  strings.TrimSpace(rows[2])
 		description :=  strings.TrimSpace(rows[4])

@@ -32,6 +32,7 @@ func (s *Storage) Setup() error {
 }
 
 func (s *Storage) Connect(password string) error {
+	// connectionString := fmt.Sprintf("host=localhost port=5432 user=postgres dbname=postgres password=%s sslmode=disable", password)
 	connectionString := fmt.Sprintf("host=db_postgres port=5432 user=postgres dbname=postgres password=%s sslmode=disable", password)
 
 	// log.Printf("Connection string%s\n", connectionString)
