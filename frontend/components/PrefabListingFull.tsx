@@ -1,3 +1,4 @@
+import { useRouter } from "next/navigation"
 import PrefabData from "./Prefab"
 
 interface TagDescription {
@@ -6,13 +7,18 @@ interface TagDescription {
 }
 
 function Tag(desc: TagDescription) {
+  const router = useRouter()
+
   return (
     <div className="w-fit">
-      <a href={"?category=" + desc.name} className="">
-        <button className=" bg-zinc-950 capitalize hover:bg-blue-600 transition duration-100 bg-opacity-50 text-zinc-200 text-sm p-1 rounded border border-zinc-600 border-opacity-50">
-          <p className="pl-1 pr-1">{desc.name}</p>
-        </button>
-      </a>
+      <button
+        onClick={() =>
+          router.push(`${window.location.pathname}?category=${desc.name}`)
+        }
+        className=" bg-zinc-950 capitalize hover:bg-blue-600 transition duration-100 bg-opacity-50 text-zinc-200 text-sm p-1 rounded border border-zinc-600 border-opacity-50"
+      >
+        <p className="pl-1 pr-1">{desc.name}</p>
+      </button>
     </div>
   )
 }
@@ -50,6 +56,8 @@ function PrefabListingFull(prefab: PrefabData) {
     linkIcon = "/globe.svg"
   }
 
+  const router = useRouter()
+
   return (
     <div
       id={prefab.id}
@@ -63,11 +71,14 @@ function PrefabListingFull(prefab: PrefabData) {
             className="object-contain rounded-md"
           />
 
-          <a href={"?name=" + prefab.creator} rel="noopener noreferrer">
-            <div className="absolute bottom-6 right-6 backdrop-blur-sm bg-zinc-950 bg-opacity-50 text-zinc-200 text-sm p-1 rounded  border-zinc-600 border-opacity-50">
-              <p className="pl-1 pr-1">{prefab.creator}</p>
-            </div>
-          </a>
+          <button
+            onClick={() =>
+              router.push(`${window.location.pathname}?name=${prefab.creator}`)
+            }
+            className="absolute bottom-6 right-6 backdrop-blur-sm bg-zinc-950 bg-opacity-50 text-zinc-200 text-sm p-1 rounded  border-zinc-600 border-opacity-50"
+          >
+            <p className="pl-1 pr-1">{prefab.creator}</p>
+          </button>
         </div>
       </div>
 
