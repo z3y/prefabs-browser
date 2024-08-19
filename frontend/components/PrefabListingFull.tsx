@@ -63,11 +63,13 @@ function PrefabListingFull(prefab: PrefabData) {
     >
       <div className="p-4 relative min-w-64 min-h-64 max-w-64 max-h-64">
         <div className="bg-zinc-800 rounded-md">
-          <img
-            src={imageScr}
-            alt="Thumbnail"
-            className="object-contain rounded-md"
-          />
+          <a href={prefab.link} target="_blank" rel="noopener noreferrer">
+            <img
+              src={imageScr}
+              alt="Thumbnail"
+              className="object-contain rounded-md"
+            />
+          </a>
 
           <button
             onClick={() =>
@@ -82,16 +84,25 @@ function PrefabListingFull(prefab: PrefabData) {
 
       <div className="grow flex flex-col">
         <div className="relative flex-row flex p-4 pl-2 gap-3">
-          {linkIcon && (
-            <img
-              src={linkIcon}
-              alt="Icon"
-              className="h-6 rounded-md self-center"
-            />
-          )}
-          <div className="flex">
-            <p className="font-semibold text-2xl text-center">{prefab.name}</p>
-          </div>
+          <a
+            href={prefab.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-row gap-3"
+          >
+            {linkIcon && (
+              <img
+                src={linkIcon}
+                alt="Icon"
+                className="h-6 rounded-md self-center"
+              />
+            )}
+            <div className="flex">
+              <p className="font-semibold text-2xl text-center">
+                {prefab.name}
+              </p>
+            </div>
+          </a>
 
           <div className="absolute flex-row flex gap-1 right-4">
             <Tag name={prefab.category} link={"test"} />
@@ -105,7 +116,7 @@ function PrefabListingFull(prefab: PrefabData) {
         </div>
 
         <div className="flex flex-row-reverse m-4 gap-2 justify-between">
-          <div className="font-semibold">
+          {/* <div className="font-semibold">
             <a
               href={prefab.link}
               target="_blank"
@@ -116,10 +127,12 @@ function PrefabListingFull(prefab: PrefabData) {
                 <p className="pl-1 pr-1">Link &#x1F517;</p>
               </button>
             </a>
-          </div>
+          </div> */}
 
           <div className=" -ml-2 self-center">
-            <p className="text-xs text-zinc-300">{dateDisplay}</p>
+            <p className="text-xs text-zinc-400">
+              {dateDisplay.replaceAll("-", "/")}
+            </p>
           </div>
         </div>
       </div>

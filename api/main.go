@@ -11,6 +11,10 @@ import (
 
 func main() {
 
+	// storage := Storage{}
+	// storage.Connect()
+	// return
+
 	pgPassword, exists := os.LookupEnv("POSTGRES_PASSWORD")
 
 
@@ -19,35 +23,32 @@ func main() {
 		log.Fatal("POSTGRES_PASSWORD env not set")
 	}
 
-	storage := Storage{}
-	err := storage.Connect(pgPassword)
+	database := Database{}
+	err := database.Connect(pgPassword)
 
 
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	log.Println("Connected to db")
 
-	// inputFromCsv(&storage)
-	// return;
-
+	// inputFromCsv(&database)
 
 	var setup bool
 	flag.BoolVar(&setup, "setup", false, "Setup db tables")
 	flag.Parse()
 	// if setup {
 	// }
-	storage.Setup()
+	database.Setup()
 
 	api := Api{
-		listenAddr: ":3000",
-		storage: &storage,
+		listenAddr: ":3001",
+		storage: &database,
 	}
 	api.Run()
 }
 
-func inputFromCsv(sorage *Storage) {
+func inputFromCsv(sorage *Database) {
 	csv := readCsvFile("data.csv")
 
 	for i := len(csv)-1; i >= 0; i-- {

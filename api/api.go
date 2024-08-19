@@ -14,7 +14,7 @@ import (
 
 type Api struct {
 	listenAddr string
-	storage    *Storage
+	storage    *Database
 }
 
 func (a *Api) Run() {
@@ -53,20 +53,35 @@ type SearchResult struct {
 }
 
 func (a *Api) handleNewPrefab(w http.ResponseWriter, r *http.Request) {
+	
+	r.ParseMultipartForm(10 << 20) //10 MB
 
 	result := Prefab{}
 
-	if err := json.NewDecoder(r.Body).Decode(&result); err != nil {
-		w.WriteHeader(http.StatusBadRequest)
-		return
-	}
+	
+	result.Name = r.FormValue("name");
+	result.Link = r.FormValue("link");
+	result.Category = r.FormValue("category");
+	result.Creator = r.FormValue("creator");
 
 	if result.Name == "" || result.Category == "" || result.Creator == "" || result.Link == "" {
-		w.WriteHeader(http.StatusBadRequest)
+		http.Error(w, "missing fields", http.StatusInternalServerError)
 		return
 	}
 
+	
+	image, _, err := r.FormFile("image")
+	if err != nil {
+        http.Error(w, "error retrieving the file", http.StatusInternalServerError)
+    } else {
+		result.Thumbnail = UploadImage(image)
+	}
+
+
 	a.storage.NewPrefab(&result)
+
+	
+	writeJson(w, http.StatusOK, result)
 }
 
 

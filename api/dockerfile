@@ -10,4 +10,5 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-w -s" -o ./bin/app
 FROM scratch
 WORKDIR /app
 COPY --from=build /build/bin/app .
+COPY ./data.csv ./
 CMD ["/app/app"]
