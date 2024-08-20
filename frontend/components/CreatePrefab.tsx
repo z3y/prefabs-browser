@@ -17,7 +17,7 @@ const CreatePrefab = () => {
     name: name,
     creator: "You",
     category: category,
-    added: "Today",
+    timestamp: "Today",
     link: link,
     description: description,
   }

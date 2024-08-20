@@ -15,7 +15,7 @@ const SortingPopover = () => {
     router.push(newPath)
   }
 
-  const buttons = ["popularity", "new", "old"]
+  const buttons = ["new", "old"]
 
   return (
     <div>

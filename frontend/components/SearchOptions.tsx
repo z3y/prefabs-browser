@@ -30,6 +30,7 @@ const SearchOptions = () => {
 
     router.push(newPath)
   }
+
   return (
     <form
       className="flex flex-row  gap-4 items-center"
@@ -56,7 +57,15 @@ const SearchOptions = () => {
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
-        <button type="reset" onClick={() => setSearchText("")}>
+        <button
+          type="reset"
+          onClick={() => {
+            const searchParams = new URLSearchParams(window.location.search)
+            searchParams.set("name", "")
+            setSearchText("")
+            router.push("/?" + searchParams.toString())
+          }}
+        >
           <Image
             src="/X.svg"
             width={18}

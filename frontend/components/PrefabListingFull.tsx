@@ -26,9 +26,9 @@ function PrefabListingFull(prefab: PrefabData) {
     prefab.thumbnail == null ? "/missing-thumbnail.png" : prefab.thumbnail
 
   const now = Date.now()
-  const date = Date.parse(prefab.added)
+  const date = Date.parse(prefab.timestamp)
   const delta = (now - date) / 1000
-  let dateDisplay = prefab.added.split("T")[0]
+  let dateDisplay = prefab.timestamp.split("T")[0]
   if (delta < 60 * 60 * 24) {
     dateDisplay = "Today"
   } else if (delta < 60 * 60 * 24 * 2) {
@@ -55,26 +55,29 @@ function PrefabListingFull(prefab: PrefabData) {
   }
 
   const router = useRouter()
+  const searchParams = new URLSearchParams(window.location.search)
 
   return (
-    <div
-      id={prefab.id}
-      className="bg-zinc-950 hover:bg-zinc-900 flex-row flex border-b border-x border-zinc-800"
-    >
+    <div className="bg-zinc-950 hover:bg-zinc-900 flex-row flex border-b border-x border-zinc-800">
       <div className="p-4 relative min-w-64 min-h-64 max-w-64 max-h-64">
         <div className="bg-zinc-800 rounded-md">
           <a href={prefab.link} target="_blank" rel="noopener noreferrer">
             <img
               src={imageScr}
               alt="Thumbnail"
-              className="object-contain rounded-md"
+              loading="lazy"
+              className="object-cover rounded-md h-56 w-56"
             />
           </a>
 
           <button
-            onClick={() =>
-              router.push(`${window.location.pathname}?name=${prefab.creator}`)
-            }
+            onClick={() => {
+              let category = searchParams.get("category") ?? "udon"
+
+              router.push(
+                `${window.location.pathname}?name=${prefab.creator}&category=${category}`
+              )
+            }}
             className="absolute bottom-6 right-6 backdrop-blur-sm bg-zinc-950 bg-opacity-50 text-zinc-200 text-sm p-1 rounded  border-zinc-600 border-opacity-50"
           >
             <p className="pl-1 pr-1">{prefab.creator}</p>
@@ -104,9 +107,9 @@ function PrefabListingFull(prefab: PrefabData) {
             </div>
           </a>
 
-          <div className="absolute flex-row flex gap-1 right-4">
+          {/* <div className="absolute flex-row flex gap-1 right-4">
             <Tag name={prefab.category} link={"test"} />
-          </div>
+          </div> */}
         </div>
 
         <div className="relative grow">
@@ -130,9 +133,7 @@ function PrefabListingFull(prefab: PrefabData) {
           </div> */}
 
           <div className=" -ml-2 self-center">
-            <p className="text-xs text-zinc-400">
-              {dateDisplay.replaceAll("-", "/")}
-            </p>
+            <p className="text-xs text-zinc-400">{dateDisplay}</p>
           </div>
         </div>
       </div>

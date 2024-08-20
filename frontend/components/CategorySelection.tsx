@@ -13,8 +13,9 @@ const CategorySelection = () => {
     { name: "udon", color: "bg-purple-600" },
     { name: "shaders", color: "bg-pink-600" },
     { name: "avatar", color: "bg-emerald-600" },
-    { name: "editor", color: "bg-orange-600" },
-    { name: "prefabs", color: "bg-blue-600" },
+    { name: "general", color: "bg-orange-600" },
+    { name: "tools", color: "bg-blue-600" },
+    { name: "tutorials", color: "bg-red-600" },
   ]
 
   const [category, setCategory] = useState(0)
