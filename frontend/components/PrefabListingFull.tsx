@@ -78,9 +78,7 @@ function PrefabListingFull(prefab: PrefabData) {
             onClick={() => {
               let category = searchParams.get("category") ?? "udon"
 
-              router.push(
-                `${window.location.pathname}?name=${prefab.creator}&category=${category}`
-              )
+              router.push(`/?name=${prefab.creator}&category=${category}`)
             }}
             className="absolute bottom-6 right-6 backdrop-blur-sm bg-zinc-950 bg-opacity-50 text-zinc-200 text-sm p-1 rounded  border-zinc-600 border-opacity-50"
           >
