@@ -345,7 +345,7 @@ func tryParseCursedTimestamp(text string) (time.Time, error) {
 }
 
 var httpClient = http.Client{
-	Timeout: time.Duration(5 * time.Second),
+	Timeout: time.Duration(10 * time.Second),
 }
 
 // func pingUrl(url string) bool {
@@ -449,7 +449,11 @@ func scrapeGithub(url string) string {
 		// log.Printf("Could not find the image src\n")
 		return ""
 	}
-	fmt.Println("Direct image link:", imageSrc)
 
-	return imageSrc
+	if !strings.HasPrefix(imageSrc, "https://opengraph.githubassets.com/") {
+		fmt.Println("Direct image link:", imageSrc)
+		return imageSrc
+	}
+
+	return ""
 }
