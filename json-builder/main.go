@@ -12,6 +12,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 	"time"
 
@@ -26,12 +27,41 @@ func main() {
 	flag.BoolVar(&scape, "scrape", false, "try and scrape thumbnails for whats possible")
 	flag.Parse()
 
+	loadCache()
+
 	if *shouldFetch {
 		fetchCsv()
 	}
 
 	for i := range sheets {
 		buildFromCsv(sheets[i])
+	}
+}
+
+func loadCache() {
+	for i := range sheets {
+
+		f, err := os.Open(filepath.Join(outputDir, sheets[i].name+".json"))
+		if err != nil {
+			continue
+		}
+		defer f.Close()
+
+		prefabs := []Prefab{}
+
+		data, err := io.ReadAll(f)
+
+		if err != nil {
+			continue
+		}
+		err = json.Unmarshal(data, &prefabs)
+		if err != nil {
+			continue
+		}
+
+		if len(prefabs) > 0 {
+			sheets[i].cache = prefabs
+		}
 	}
 }
 
@@ -44,9 +74,10 @@ type Sheet struct {
 	descriptionId int
 	previewId     int
 	timestampId   int
+	cache         []Prefab
 }
 
-const dir = "input"
+const inputDir = "input"
 
 var sheets = []Sheet{
 	// {name: "Creator Companion", gid: "1991500993"},
@@ -116,12 +147,12 @@ func fetchCsv() error {
 
 	url := "https://docs.google.com/spreadsheets/d/e/2PACX-1vTP-eIkYLZh7pDhpO-untxy1zbuoiqdzVP2z5-vg_9ijBW7k8ZC9VP6cVL-ct5yKrySPBPJ6V2ymlWS/pub?output=csv&gid="
 
-	os.Mkdir(dir, os.ModePerm)
+	os.Mkdir(inputDir, os.ModePerm)
 
 	for i := range sheets {
 		sheet := sheets[i]
 
-		out, err := os.Create(filepath.Join(dir, sheet.name+".csv"))
+		out, err := os.Create(filepath.Join(inputDir, sheet.name+".csv"))
 		if err != nil {
 			return err
 		}
@@ -152,9 +183,10 @@ type Prefab struct {
 	Timestamp   time.Time `json:"timestamp,omitempty"`
 }
 
+const outputDir = "output"
+
 func buildFromCsv(sheet Sheet) {
-	csv := readCsvFile(filepath.Join(dir, sheet.name+".csv"))
-	const outputDir = "output"
+	csv := readCsvFile(filepath.Join(inputDir, sheet.name+".csv"))
 
 	prefabs := []Prefab{}
 
@@ -221,15 +253,28 @@ func buildFromCsv(sheet Sheet) {
 
 		if scape && prefab.Thumbnail == "" {
 
-			previewUrl := scrapeThumbnail(prefab.Link)
-			if previewUrl != "" {
-				prefab.Thumbnail = previewUrl
-				validPreviews += 1
+			if sheet.cache != nil && len(sheet.cache) > 0 {
+				for _, c := range sheet.cache {
+					if c.Id == prefab.Id {
+						prefab.Thumbnail = c.Thumbnail
+						break
+					}
+				}
+			} else if prefab.Thumbnail == "" {
+				previewUrl := scrapeThumbnail(prefab.Link)
+				if previewUrl != "" {
+					prefab.Thumbnail = previewUrl
+					validPreviews += 1
+				}
 			}
 		}
 
 		prefabs = append(prefabs, prefab)
 	}
+
+	sort.Slice(prefabs, func(i, j int) bool {
+		return prefabs[i].Timestamp.Unix() > prefabs[j].Timestamp.Unix()
+	})
 
 	jsonData, err := json.MarshalIndent(prefabs, "", "	")
 
