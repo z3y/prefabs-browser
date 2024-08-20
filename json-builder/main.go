@@ -22,7 +22,7 @@ func main() {
 		fetchCsv()
 	}
 
-	buildFromCsv()
+	buildFromCsv(sheets[0])
 }
 
 type Sheet struct {
@@ -36,67 +36,69 @@ type Sheet struct {
 	timestampId   int
 }
 
+const dir = "input"
+
 var sheets = []Sheet{
 	// {name: "Creator Companion", gid: "1991500993"},
 	{
 		name:          "Udon",
 		gid:           "1520869360",
-		nameId:        1,
-		creatorId:     2,
-		linkId:        5,
-		descriptionId: 4,
+		nameId:        0,
+		creatorId:     1,
+		linkId:        4,
+		descriptionId: 3,
 		previewId:     -1,
-		timestampId:   6,
+		timestampId:   5,
 	},
 	{
 		name:          "AV3",
 		gid:           "113748590",
-		nameId:        1,
-		creatorId:     2,
-		linkId:        4,
-		descriptionId: 3,
-		previewId:     8,
-		timestampId:   5,
+		nameId:        0,
+		creatorId:     1,
+		linkId:        3,
+		descriptionId: 2,
+		previewId:     7,
+		timestampId:   4,
 	},
 	{
 		name:          "Shaders",
 		gid:           "1207467774",
-		nameId:        1,
-		creatorId:     2,
-		linkId:        4,
-		descriptionId: 3,
-		previewId:     7,
-		timestampId:   5,
+		nameId:        0,
+		creatorId:     1,
+		linkId:        3,
+		descriptionId: 2,
+		previewId:     6,
+		timestampId:   4,
 	},
 	{
 		name:          "Tutorials",
 		gid:           "81530312",
-		nameId:        1,
-		creatorId:     2,
-		linkId:        4,
-		descriptionId: 3,
+		nameId:        0,
+		creatorId:     1,
+		linkId:        3,
+		descriptionId: 2,
 		previewId:     -1,
-		timestampId:   5,
+		timestampId:   4,
 	},
 	{
 		name:          "Tools",
 		gid:           "1950242888",
-		nameId:        1,
-		creatorId:     2,
-		linkId:        4,
-		descriptionId: 3,
-		previewId:     8,
-		timestampId:   5,
+		nameId:        0,
+		creatorId:     1,
+		linkId:        3,
+		descriptionId: 2,
+		previewId:     7,
+		timestampId:   4,
 	},
 	{
 		name:          "General Assets",
 		gid:           "1258606581",
-		nameId:        1,
-		creatorId:     2,
-		linkId:        4,
-		descriptionId: 3,
-		previewId:     8,
-		timestampId:   5,
+		nameId:        0,
+		creatorId:     1,
+		linkId:        3,
+		descriptionId: 2,
+		previewId:     7,
+		timestampId:   4,
 	},
 }
 
@@ -104,7 +106,6 @@ func fetchCsv() error {
 
 	url := "https://docs.google.com/spreadsheets/d/e/2PACX-1vTP-eIkYLZh7pDhpO-untxy1zbuoiqdzVP2z5-vg_9ijBW7k8ZC9VP6cVL-ct5yKrySPBPJ6V2ymlWS/pub?output=csv&gid="
 
-	const dir = "input"
 	os.Mkdir(dir, os.ModePerm)
 
 	for i := range sheets {
@@ -142,23 +143,35 @@ type Prefab struct {
 	Timestamp   time.Time `json:"timestamp,omitempty"`
 }
 
-func buildFromCsv() {
-	csv := readCsvFile("input.csv")
+func buildFromCsv(sheet Sheet) {
+	csv := readCsvFile(filepath.Join(dir, sheet.name+".csv"))
 
 	prefabs := []Prefab{}
 
-	for i := len(csv) - 1; i >= 0; i-- {
+	for i := 0; i < len(csv); i++ {
 		rows := csv[i]
-		name := strings.TrimSpace(rows[1])
-		creator := strings.TrimSpace(rows[2])
-		description := strings.TrimSpace(rows[4])
-		link := strings.TrimSpace(rows[5])
+		name := strings.TrimSpace(rows[sheet.nameId])
+		creator := strings.TrimSpace(rows[sheet.creatorId])
+		description := strings.TrimSpace(rows[sheet.descriptionId])
+		link := strings.TrimSpace(rows[sheet.linkId])
+		time := strings.TrimSpace(rows[sheet.timestampId])
 
 		if link == "" {
 			continue
 		}
 
+		if !strings.HasPrefix(link, "https://") {
+			log.Printf("invalid url: %s, at name: %s, sheet: %s\n", link, name, sheet.name)
+			continue
+		}
+
 		//fmt.Printf("%s|%s|%s|%s\n", name, creator, description, link)
+
+		timestamp, err := tryParseCursedTimestamp(time)
+		if err != nil {
+			log.Println(err)
+			continue
+		}
 
 		prefab := Prefab{
 			Name:        name,
@@ -166,6 +179,7 @@ func buildFromCsv() {
 			Creator:     creator,
 			Link:        link,
 			Description: description,
+			Timestamp:   timestamp,
 		}
 
 		prefabs = append(prefabs, prefab)
@@ -195,4 +209,16 @@ func readCsvFile(filePath string) [][]string {
 	}
 
 	return records
+}
+
+func tryParseCursedTimestamp(text string) (time.Time, error) {
+
+	text = strings.ReplaceAll(text, "/", "-")
+
+	t, err := time.Parse("1-2-2006 15:04:05", text)
+	if err == nil {
+		return t, nil
+	}
+
+	return time.Time{}, err
 }
