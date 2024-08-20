@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
+  images: {
+    loader: "custom",
+    loaderFile: "./my-loader.ts",
+  },
 }
 
 // https://www.viget.com/articles/host-build-and-deploy-next-js-projects-on-github-pages/
