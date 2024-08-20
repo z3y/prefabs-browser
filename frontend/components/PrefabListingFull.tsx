@@ -1,6 +1,8 @@
 import { useRouter } from "next/navigation"
 import PrefabData from "./Prefab"
 
+import Image from "next/image"
+
 interface TagDescription {
   name: string
   link: string
@@ -62,11 +64,13 @@ function PrefabListingFull(prefab: PrefabData) {
       <div className="p-4 relative min-w-64 min-h-64 max-w-64 max-h-64">
         <div className="bg-zinc-800 rounded-md">
           <a href={prefab.link} target="_blank" rel="noopener noreferrer">
-            <img
+            <Image
               src={imageScr}
               alt="Thumbnail"
               loading="lazy"
               className="object-cover rounded-md h-56 w-56"
+              width={56}
+              height={56}
             />
           </a>
 
@@ -94,10 +98,12 @@ function PrefabListingFull(prefab: PrefabData) {
             className="flex flex-row gap-3"
           >
             {linkIcon && (
-              <img
+              <Image
                 src={linkIcon}
                 alt="Icon"
-                className="h-6 rounded-md self-center"
+                className="h-6 w-6 rounded-md self-center"
+                width={6}
+                height={6}
               />
             )}
             <div className="flex">

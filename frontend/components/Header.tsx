@@ -15,7 +15,12 @@ const Header = () => {
         <div className="flex flex-row items-center gap-8">
           <button type="button" onClick={() => router.push("/")}>
             <div className="text-lg text-zinc-200 font-semibold flex flex-row items-center gap-2">
-              <img src={"/main-logo.png"} alt={"logo"} width={28} height={28} />
+              <Image
+                src={"/main-logo.png"}
+                alt={"logo"}
+                width={28}
+                height={28}
+              />
               <p>Prefabs Browser</p>
             </div>
           </button>
