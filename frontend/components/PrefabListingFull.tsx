@@ -66,7 +66,7 @@ function PrefabListingFull(prefab: PrefabData) {
               src={imageScr}
               alt="Thumbnail"
               loading="lazy"
-              className="object-cover rounded-md h-56 w-56"
+              className="object-contain rounded-md h-56 w-56"
             />
           </a>
 

@@ -190,7 +190,6 @@ func buildFromCsv(sheet Sheet) {
 
 	prefabs := []Prefab{}
 
-	totalPreviews := 0
 	validPreviews := 0
 
 	for i := 0; i < len(csv); i++ {
@@ -236,7 +235,6 @@ func buildFromCsv(sheet Sheet) {
 			preview := strings.TrimSpace(rows[sheet.previewId])
 
 			if preview != "" {
-				totalPreviews += 1
 				previewUrl := tryParsePreviewUrl(preview)
 
 				if previewUrl != "" && !isDiscord(previewUrl) {
@@ -251,21 +249,22 @@ func buildFromCsv(sheet Sheet) {
 		prefab.Id = hex.EncodeToString(h.Sum(nil))
 		// log.Println(prefab.Id)
 
-		if scape && prefab.Thumbnail == "" {
-
+		if prefab.Thumbnail == "" {
 			if sheet.cache != nil && len(sheet.cache) > 0 {
 				for _, c := range sheet.cache {
-					if c.Id == prefab.Id {
+					if c.Id == prefab.Id && c.Thumbnail != "" {
 						prefab.Thumbnail = c.Thumbnail
+						validPreviews += 1
 						break
 					}
 				}
-			} else if prefab.Thumbnail == "" {
-				previewUrl := scrapeThumbnail(prefab.Link)
-				if previewUrl != "" {
-					prefab.Thumbnail = previewUrl
-					validPreviews += 1
-				}
+			}
+		}
+		if scape && prefab.Thumbnail == "" {
+			previewUrl := scrapeThumbnail(prefab.Link)
+			if previewUrl != "" {
+				prefab.Thumbnail = previewUrl
+				validPreviews += 1
 			}
 		}
 
@@ -283,7 +282,7 @@ func buildFromCsv(sheet Sheet) {
 	}
 	os.Mkdir(outputDir, os.ModePerm)
 
-	log.Printf("Valid Previews: %d/%d, for sheet: %s", validPreviews, totalPreviews, sheet.name)
+	log.Printf("Sheet: %s, Previews: %d/%d", sheet.name, validPreviews, len(prefabs))
 
 	os.WriteFile(filepath.Join(outputDir, sheet.name+".json"), jsonData, os.ModePerm)
 }
@@ -365,6 +364,8 @@ func scrapeThumbnail(url string) string {
 		return scrapeBooth(url)
 	} else if strings.Contains(url, "gumroad.com/l/") {
 		return scrapeGumroad(url)
+	} else if strings.HasPrefix(url, "https://github.com/") {
+		return scrapeGithub(url)
 	}
 
 	return ""
@@ -424,4 +425,31 @@ func scrapeGumroad(url string) string {
 	}
 
 	return ""
+}
+
+func scrapeGithub(url string) string {
+
+	resp, err := httpClient.Get(url)
+	if err != nil {
+		return ""
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return ""
+	}
+
+	doc, err := goquery.NewDocumentFromReader(resp.Body)
+	if err != nil {
+		return ""
+	}
+
+	imageSrc, exists := doc.Find(`meta[property="og:image"]`).Attr("content")
+	if !exists {
+		// log.Printf("Could not find the image src\n")
+		return ""
+	}
+	fmt.Println("Direct image link:", imageSrc)
+
+	return imageSrc
 }
