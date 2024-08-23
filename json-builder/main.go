@@ -14,6 +14,7 @@ import (
 	"path/filepath"
 	"sort"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
@@ -149,26 +150,39 @@ func fetchCsv() error {
 
 	os.Mkdir(inputDir, os.ModePerm)
 
+	var wg sync.WaitGroup
+
 	for i := range sheets {
-		sheet := sheets[i]
+		wg.Add(1)
 
-		out, err := os.Create(filepath.Join(inputDir, sheet.name+".csv"))
-		if err != nil {
-			return err
-		}
-		defer out.Close()
+		go func(index int) {
 
-		resp, err := http.Get(url + sheet.gid)
-		if err != nil {
-			return err
-		}
-		defer resp.Body.Close()
+			defer wg.Done()
 
-		_, err = io.Copy(out, resp.Body)
-		if err != nil {
-			return err
-		}
+			sheet := sheets[index]
+
+			out, err := os.Create(filepath.Join(inputDir, sheet.name+".csv"))
+			if err != nil {
+				log.Fatal(err)
+			}
+			defer out.Close()
+
+			sheetUrl := url + sheet.gid
+			log.Printf("fetching %s", sheetUrl)
+			resp, err := http.Get(sheetUrl)
+			if err != nil {
+				log.Fatal(err)
+			}
+			defer resp.Body.Close()
+
+			_, err = io.Copy(out, resp.Body)
+			if err != nil {
+				log.Fatal(err)
+			}
+		}(i)
 	}
+
+	wg.Wait()
 
 	return nil
 }
