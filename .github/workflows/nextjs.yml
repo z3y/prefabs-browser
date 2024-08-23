@@ -27,6 +27,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     defaults:
       run:
         working-directory: ./json-builder
@@ -50,6 +51,7 @@ jobs:
   build:
     needs: update
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     defaults:
       run:
         working-directory: ./frontend
@@ -94,6 +96,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     needs: build
     steps:
       - name: Deploy to GitHub Pages
