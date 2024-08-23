@@ -1,10 +1,10 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Noto_Sans } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/Header"
 import { Suspense } from "react"
 
-const inter = Inter({ subsets: ["latin"] })
+const font = Noto_Sans({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Prefabs",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
         <div className="bg-zinc-950">
           <Suspense fallback={null}>
             <Header />

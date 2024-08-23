@@ -2,8 +2,7 @@
 const nextConfig = {
   output: "export",
   images: {
-    loader: "custom",
-    loaderFile: "./my-loader.ts",
+    unoptimized: true,
   },
 }
 
@@ -14,6 +13,11 @@ if (isGithubActions) {
 
   nextConfig.assetPrefix = `/${repo}`
   nextConfig.basePath = `/${repo}`
+  nextConfig.images = {
+    loader: "custom",
+    loaderFile: "./my-loader.ts",
+    unoptimized: false,
+  }
 }
 
 export default nextConfig

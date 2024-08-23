@@ -33,11 +33,11 @@ const SearchOptions = () => {
 
   return (
     <form
-      className="flex flex-row  gap-4 items-center"
+      className="flex flex-row grow gap-4 items-center"
       autoComplete="off"
       onSubmit={handleSearch}
     >
-      <div className="lg:w-80 flex flex-row rounded-xl bg-zinc-900  hover:bg-blue-600 border-opacity-0 hover:border-opacity-100 border  transition-colors duration-150 border-zinc-700 items-center">
+      <div className="grow flex flex-row rounded-xl bg-zinc-900  hover:bg-blue-600 border-opacity-0 hover:border-opacity-100 border  transition-colors duration-150 border-zinc-700 items-center">
         <button type="submit">
           <Image
             src="/Magnifier2.svg"
@@ -79,46 +79,6 @@ const SearchOptions = () => {
       </div>
 
       <SortingPopover />
-
-      {/* <div className="flex flex-row items-center gap-4 pt-4">
-          <p className="text-zinc-200 text-sm w-12">Sorting</p>
-
-          <Select
-            name="sorting"
-            aria-label="Popularity"
-            className="bg-zinc-950  border border-zinc-800 rounded-md p-2 focus:outline-none w-56"
-          >
-            <option value="popularity">Popularity</option>
-            <option value="new">New</option>
-            <option value="old">Old</option>
-          </Select>
-        </div> */}
-
-      {/* <div className="flex flex-row items-center gap-4">
-          <p className="text-zinc-200 text-sm w-12">Type</p>
-          <Select
-            name="type"
-            aria-label="Any"
-            className="bg-zinc-950 border border-zinc-800 rounded-md p-2 focus:outline-none w-56"
-          >
-            <option value="any">Any</option>
-            <option value="udon">Udon</option>
-            <option value="avatar">Avatar</option>
-            <option value="tool">Tool</option>
-            <option value="general">General Assets</option>
-          </Select>
-        </div> */}
-
-      {/* <div className="flex flex-row items-center gap-4">
-          <p className="text-zinc-200 text-sm w-12">Creator</p>
-          <input
-            className="bg-zinc-950 border border-zinc-800 rounded-md p-2 focus:outline-none w-56"
-            type="text"
-            id="creator"
-            name="creator"
-            placeholder=""
-          ></input>
-        </div> */}
     </form>
   )
 }
