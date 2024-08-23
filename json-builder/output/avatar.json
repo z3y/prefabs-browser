@@ -1,0 +1,605 @@
+[
+	{
+		"id": "c8fb137a2a6f598218b22ecf7bb02e2b67e036c6",
+		"name": "Hackebein's Object Tracking",
+		"creator": "Hackebein",
+		"link": "https://github.com/Hackebein/Object-Tracking-Unitypackage/releases",
+		"description": "Track your real objects and track them in VRChat. All SteamVR/OpenVR tracker are supported.",
+		"timestamp": "2024-08-03T14:44:39Z"
+	},
+	{
+		"id": "d984017bf78a9f8f29118bb39c7414e4764af650",
+		"name": "Dynamic VRC Floor Collider",
+		"creator": "BluWizard10",
+		"link": "https://github.com/BluWizard10/dynamic-floor",
+		"description": "A simple Floor Collider system that dynamically retains it's position on the Floor when you jump, allowing rigged Tails of long length to look more natural. Uses the new VRC Constraints system for optimal performance.",
+		"timestamp": "2024-07-11T21:33:30Z"
+	},
+	{
+		"id": "bdfa6fa03f59b82f28c6e7d0451bafbb1b58ef44",
+		"name": "Light Limit Changer for MA",
+		"creator": "Azukimochi",
+		"link": "https://azukimochi.github.io/LLC-Docs/",
+		"description": "A tool that relies on Modular Avatar to easily and non-destructively introduce lighting change animations for lilToon/Poiyomi/Sunao shaders. In addition to brightness, it also supports color temperature, saturation, Unlit, and monochrome animation.",
+		"timestamp": "2024-05-27T10:53:47Z"
+	},
+	{
+		"id": "0be950abece8d1428c00c2218454ad3f9f7c8f70",
+		"name": "VRC Skeletal Hands",
+		"creator": "Dyslex1k",
+		"link": "https://github.com/Dyslex1k/VRC-Skeletal-Hands",
+		"description": "Drag\u0026 Drop avatar setup and OSC app that allows Skeletal Input in VRChat.",
+		"thumbnail": "https://repository-images.githubusercontent.com/783725462/62bc804a-bb18-4a12-a819-cd284f44a25b",
+		"timestamp": "2024-04-08T11:59:23Z"
+	},
+	{
+		"id": "b18ccbfb4206bda0cd85ce8e1c5ed90240a757e8",
+		"name": "VRCFury",
+		"creator": "SenkyDragon",
+		"link": "https://vrcfury.com/download",
+		"description": "Non-Destructive Tools for VRChat Avatars.",
+		"timestamp": "2024-04-02T17:06:51Z"
+	},
+	{
+		"id": "0a6de6cc682bc51111c0e85c96afd122b45bb5ca",
+		"name": "OSC Parameter Sync system for VRChat 3.0 Avatars - Unlimited Avatar Parameters",
+		"creator": "Fuujin",
+		"link": "https://fuuujin.gumroad.com/l/OSCParameterSync",
+		"description": "This allows you to use more than the 256 memory allowed for you to use by VRChat.\nTo learn more about the conditions and use, please read the description on the product page. A video tutorial is included !",
+		"thumbnail": "https://public-files.gumroad.com/o18k8xox5tgfgof5bsqbf1itl7lb",
+		"timestamp": "2023-12-14T07:18:05Z"
+	},
+	{
+		"id": "d1c6fe562daa079e47a5c620edda23803c75de80",
+		"name": "Complex Conditional Direct Blendtrees Examples Prefab for VRChat 3.0 Avatars",
+		"creator": "Fuujin",
+		"link": "https://fuuujin.gumroad.com/l/ComplexBlendtreesPrefab",
+		"description": "This prefab provides examples, how you can make toggles in direct blendtrees with multiple conditions. For example it includes an example of toggling a toggle when two parameters are true (AND) and an example of toggling an item when one ore more parameters are true (OR)",
+		"thumbnail": "https://public-files.gumroad.com/vgk469neabj0jbohvxtx1c6qashm",
+		"timestamp": "2023-12-14T06:40:37Z"
+	},
+	{
+		"id": "d36d5954ed6cdae30f19d39169050442d9b246f4",
+		"name": "VRC Graffiti",
+		"creator": "Absolute Stratos",
+		"link": "https://github.com/AbsoluteStratos/VRC_Graffiti",
+		"description": "Functional graffiti can prefab for VR Chat avatars for spraying images onto VRC world objects",
+		"thumbnail": "https://github.com/AbsoluteStratos/VRC_Graffiti/blob/main/docs/readme/GraffitiDemo.gif",
+		"timestamp": "2023-05-20T15:22:25Z"
+	},
+	{
+		"id": "664f6bf29f632595e66aa0be4d8f3e7d4a969691",
+		"name": "「VRC懐中電灯」Silhouette Torch! Interactive Flashlight For Avatars 3.0!",
+		"creator": "Okaeri Game Studio",
+		"link": "https://okaeri-shop.booth.pm/items/4705964",
+		"description": "An interactive torch light for Avatars 3.0!",
+		"thumbnail": "https://booth.pximg.net/b948e0ee-3f6b-4acc-aab4-134408f2ecbf/i/4705964/b6940821-dbd2-42d5-b779-dec8cf32eba1_base_resized.jpg",
+		"timestamp": "2023-04-21T09:02:13Z"
+	},
+	{
+		"id": "a5598f5038c5781628e830ffa81f4921a9ebfce4",
+		"name": "Avatar Optimizer",
+		"creator": "anatawa12",
+		"link": "https://github.com/anatawa12/AvatarOptimizer#installation",
+		"description": "Avatar Optimization Utilities",
+		"timestamp": "2023-03-31T06:14:00Z"
+	},
+	{
+		"id": "3986d607447359cc11b8c29ca77e043aab701d85",
+		"name": "Base Animations menu for VRChat 3.0 Avatars",
+		"creator": "Fuuujin",
+		"link": "https://fuuujin.gumroad.com/l/siTit",
+		"description": "The default animations menu that VRChat puts on your avatar if you do not use a custome menu for your avatar. Wave, Dance, etc.",
+		"thumbnail": "https://public-files.gumroad.com/6hg8ls6mtj2hl8okco7f6mm3kh8h",
+		"timestamp": "2023-01-14T07:03:21Z"
+	},
+	{
+		"id": "ec8413e63bf9ad7970d275b18853cd8bca01bd9e",
+		"name": "Modular Avatar",
+		"creator": "bd_",
+		"link": "https://modular-avatar.nadena.dev/",
+		"description": "Tools for non-destructive avatar assembly and avatar gimmick installation",
+		"timestamp": "2022-11-27T17:26:03Z"
+	},
+	{
+		"id": "5d38692bb505ad26fa827568af54f5d7e3d00193",
+		"name": "Steve's Avatar PvP System",
+		"creator": "Steve the Mitochondria",
+		"link": "https://dangernoodleshop.booth.pm/items/4322176",
+		"description": "A simple PvP system using contact senders and receivers with several damage type examples.",
+		"thumbnail": "https://booth.pximg.net/799a299d-84ce-4a8a-bad5-8bf77b2262a5/i/4322176/1e19aee6-6bdc-4ddd-b5bd-0da359724bcd_base_resized.jpg",
+		"timestamp": "2022-11-24T10:31:10Z"
+	},
+	{
+		"id": "3b4a3edd60c19a4d6abeb28c91343d21adbb7b06",
+		"name": "Synced Roller",
+		"creator": "Skipper",
+		"link": "https://skippersablie.booth.pm/items/4320337",
+		"description": "A synced simple d20 roller for VRC",
+		"thumbnail": "https://booth.pximg.net/60947349-84a5-4a85-8403-cf96cdd77688/i/4320337/2962073f-b778-4907-b54b-f9f4100b6496_base_resized.jpg",
+		"timestamp": "2022-11-14T22:05:48Z"
+	},
+	{
+		"id": "f67117970ce9bef3db5f06b628163ee326287b19",
+		"name": "Entorix FAB Flight and Boost",
+		"creator": "Entorix",
+		"link": "https://github.com/Entorix/Entorix-FAB-Flight-and-Boost-",
+		"description": "A Simple prefab for VRChat 3.0 Avatars that lets you fly and boost forward (while in the air)",
+		"timestamp": "2022-10-27T14:28:31Z"
+	},
+	{
+		"id": "aa406e4b3b943f20136c4d8a6f12575be27676ef",
+		"name": "Entorix Collision Trigger",
+		"creator": "Entorix",
+		"link": "https://github.com/Entorix/Entorix-Collision-Trigger",
+		"description": "A basic particle death stop-action/avatar dynamics based collision detector that allows the triggering of animations when the gameobject collides with a generic collider",
+		"timestamp": "2022-10-27T13:58:39Z"
+	},
+	{
+		"id": "8e1ceba4393f08f79d05c72883c3e6d87ce99535",
+		"name": "Full body sitting layer",
+		"creator": "Dannyboi",
+		"link": "https://daniboi.gumroad.com/l/IIaNK?_gl=1*2pqfsn*_ga*Mjk0MTc5MjQ0LjE2MDg2MjU2NzY.*_ga_6LJN6D94N6*MTY2Njc3NTIzMS4yMTMuMS4xNjY2Nzc2NjQ2LjAuMC4w",
+		"description": "A sitting layer for 3.0 avatars that lets you keep full body while in a station, and reverts to normal sitting when in half-body or desktop",
+		"thumbnail": "https://public-files.gumroad.com/bq2dybma55788os5cqpw6mb7l80d",
+		"timestamp": "2022-10-26T14:38:34Z"
+	},
+	{
+		"id": "78bb98e2ae4b34664b8bf0d69583bb0cd9890c9d",
+		"name": "Friendship Bracelet",
+		"creator": "Liindy",
+		"link": "https://liindy.gumroad.com/l/FriendshipBracelet",
+		"description": "Need a fancy way to show people who you really love the most? The Friendship Bracelet will do exactly that! With contact sender and receiver, you can make your bracelet react to your significant other, close friend or anyone who has set the same ID to their bracelet. Anyone who has the bracelet, but not the same ID on it will not react together.",
+		"thumbnail": "https://public-files.gumroad.com/0xcnoge6xb9rj8ipq3iroeh0stq6",
+		"timestamp": "2022-10-20T08:15:49Z"
+	},
+	{
+		"id": "f25bd3a0503e717d2389c053207d83b2f9a8402c",
+		"name": "HOITEX Trombone",
+		"creator": "Hoizen",
+		"link": "https://docs.google.com/document/d/1Y4MWO_cJsK4onF8AXUPg-_XN91PggWPkeKO8-MaVZRM/edit?usp=sharing",
+		"description": "A functional Trombone using VRC Native Avatar Dynamics",
+		"timestamp": "2022-09-26T00:15:04Z"
+	},
+	{
+		"id": "a02e0675d5004456f8b4f74df37ef25df6a58853",
+		"name": "WorldSync",
+		"creator": "Juzo",
+		"link": "https://github.com/JuzoVR/WorldSync",
+		"description": "A prefab to help keep your world drops Synchronized for late joiners.",
+		"timestamp": "2022-09-11T16:09:34Z"
+	},
+	{
+		"id": "990c05ede7f7303a9c1270ee6993848679aa584e",
+		"name": "VRC Headpat Counter",
+		"creator": "TimeLincoln",
+		"link": "https://github.com/LincolnVR/vrc-headpat-counter",
+		"description": "A dynamic counter for VRChat. This script uses parameters setup inside VRC Contact Receivers. It will track and temporarily display set properties into VRC's chatbox each time one of those properties is incremented.",
+		"timestamp": "2022-09-09T17:54:10Z"
+	},
+	{
+		"id": "752aa23ec13e3e9dabd858acf78a73d16f8ecdf5",
+		"name": "OSCLeash",
+		"creator": "ZenithVal",
+		"link": "https://github.com/ZenithVal/OSCLeash",
+		"description": "A simple OSC tool to move the player in the direction of and stretchable physbone. You could pull someone with you by holding their hand or yanking their tail!",
+		"timestamp": "2022-08-23T18:24:09Z"
+	},
+	{
+		"id": "35a0d67458988390c3e1de3c3a5ea0569f1c0c02",
+		"name": "Expanded Avatar Hand Interactions (EAHI)",
+		"creator": "Faycal#6941",
+		"link": "http://www.github.com/faycalki/EAHI",
+		"description": "Allows your hands to interact with other people's body parts in the form of visual special effects, sound effects, haptics, along with interacting with your own body as well. Multiple SFX, VFX, toggles are included. Project is under MIT license.",
+		"timestamp": "2022-08-14T01:04:30Z"
+	},
+	{
+		"id": "51b3ddfb4350ed9196c21a0c6d4559087db13319",
+		"name": "Portable Mirror Drop (PMD)",
+		"creator": "Juzo_VR",
+		"link": "https://juzovr.gumroad.com/l/PMD",
+		"description": "A prefab that allows a user to drop a local 2d \"mirror\" that is easily adjusted to the users needs.",
+		"thumbnail": "https://public-files.gumroad.com/1oo537qjefwush52i25laq4008bo",
+		"timestamp": "2022-07-27T09:46:32Z"
+	},
+	{
+		"id": "fb050882e9efea435fe8c2d5dd382233af16191d",
+		"name": "Eye Tracking to Animation",
+		"creator": "akalink",
+		"link": "https://mcphersonsound.booth.pm/items/4009926",
+		"description": "This prefab reduces the amount of boilerplate work required to make custom eye tracking. It takes eye movement and converts it into animation float data.",
+		"thumbnail": "https://booth.pximg.net/b86b039a-a081-441d-bd5b-c92157dc0cc4/i/4009926/bfbaa154-7b8e-4882-9c4b-5fa52ae4336c_base_resized.jpg",
+		"timestamp": "2022-07-17T23:00:12Z"
+	},
+	{
+		"id": "1c31bb9319b936975da1b59979480d910f689e6b",
+		"name": "Portal Gun for Avatars",
+		"creator": "Fooma",
+		"link": "https://foomaring.gumroad.com/l/PortalGun",
+		"description": "Avatar Portal Gun system using raycasts, stations, and constraints.",
+		"timestamp": "2022-07-13T03:55:18Z"
+	},
+	{
+		"id": "a5ed0c36008e85963aefb386ce41d1bd668ba8bb",
+		"name": "Hop Follower + Super Ultra Combat Critters",
+		"creator": "MMMaellon",
+		"link": "https://github.com/MMMaellon/SuperUltraCombatCritters",
+		"description": "A set of prefabs that adds a critter to your avatar that follows you by hopping around. If you install the full Super Ultra Combat Critters version, your avatar can fight other people's critters to earn badges with a turn-based combat system.",
+		"timestamp": "2022-06-30T06:47:28Z"
+	},
+	{
+		"id": "4e5357efd1f8636c03c26af69182fd8aa79bc130",
+		"name": "Worldlock AutoSetup",
+		"creator": "Voyage",
+		"link": "https://github.com/vr-voyage/vrchat-worldlock-autosetup/releases/latest",
+		"description": "A small Unity tool to setup World Locked objects on avatars",
+		"timestamp": "2022-06-25T00:23:15Z"
+	},
+	{
+		"id": "f2e80dbb32917a48f4ddab626b25f62d41e1200a",
+		"name": "AvatarJukebox",
+		"creator": "Nichevo",
+		"link": "https://drive.google.com/file/d/1RbJ5ZW2M5RL58WCXiIvWywanw-j0-SWl/view?usp=sharing",
+		"description": "A toggleable worldspace jukebox for your avatar which anyone can interact with. Once set up, just drop your in your favorite audio tracks. Requires Poiyomi shader. Instructions in readme file.",
+		"timestamp": "2022-06-09T22:46:15Z"
+	},
+	{
+		"id": "498984b3b803bbd774aae867615c09ef3180bfb6",
+		"name": "WakaKeyboard",
+		"creator": "Wakamu",
+		"link": "https://wakamu.gumroad.com/l/wakakeyboard",
+		"description": "A Quest and PC compatible typing keyboard for avatars",
+		"thumbnail": "https://public-files.gumroad.com/o6cfruzhixe1wqs1w2yw8lc4tr5b",
+		"timestamp": "2022-06-06T20:50:13Z"
+	},
+	{
+		"id": "dc3e404584352587bd352b4c64d0a8d4fc27435c",
+		"name": "OSCMotion",
+		"creator": "lox9973",
+		"link": "https://gitlab.com/lox9973/OSCMotion",
+		"description": "A tool to stream avatar motion from Unity to VRChat by sending muscle values over OSC",
+		"timestamp": "2022-06-05T20:05:12Z"
+	},
+	{
+		"id": "cacece8e103bbd913bee041534dc03828f66a128",
+		"name": "Grabbable Balloon!",
+		"creator": "G1fan",
+		"link": "https://g1fan.booth.pm/items/3911853",
+		"description": "Pop! A grabbable balloon you can put on your avatar and share with your friends! Pop!",
+		"thumbnail": "https://booth.pximg.net/ef6022b5-861b-4fe9-b076-a275def958ca/i/3911853/c11e0ad5-17c5-4dd2-b53c-e2920f50c80f_base_resized.jpg",
+		"timestamp": "2022-06-03T19:50:19Z"
+	},
+	{
+		"id": "863ea2f36ed21ca038a274bfb60b30cc1f7d5266",
+		"name": "IK 2.0 11 Point Armature",
+		"creator": "Alease",
+		"link": "https://aleasevr.gumroad.com/l/ik2rig",
+		"description": "a .blend for those who are looking for an example of 11 point tracking armature. Armature will also degrade gracefully with 6 and 9 point tracking.",
+		"thumbnail": "https://public-files.gumroad.com/kyrth1za2uxyy01w86fclvn2xzb1",
+		"timestamp": "2022-05-26T04:35:52Z"
+	},
+	{
+		"id": "4a6c36359bc68732016fade953f907ee969ab0e4",
+		"name": "Player Tracker",
+		"creator": "hfcRed",
+		"link": "https://github.com/hfcRed/Player-Tracker",
+		"description": "A system which allows you to select and attach a tracker to any standard avatar contact on any player.",
+		"timestamp": "2022-05-15T18:20:30Z"
+	},
+	{
+		"id": "9f1c6a5d040531b48b801c58ec21db8fefaa383c",
+		"name": "Among Us Follower",
+		"creator": "hfcRed",
+		"link": "https://github.com/hfcRed/Among-Us-Follower",
+		"description": "A very simple, one step set up, self contained crewmate follower.",
+		"timestamp": "2022-05-15T18:19:43Z"
+	},
+	{
+		"id": "10a0fe77f8e29c48fb47ef58140f5d229d13c609",
+		"name": "Avatar Remote",
+		"creator": "bd_",
+		"link": "https://github.com/bdunderscore/avrc/releases",
+		"description": "Uses Avatar Dynamics to transmit Av3.0 parameters between two avatars",
+		"timestamp": "2022-05-02T19:16:32Z"
+	},
+	{
+		"id": "543c29c722b2244d9fb6d71f5b778d75837e760f",
+		"name": "PhysBone Salvage Converter",
+		"creator": "Hearty Laboratory",
+		"link": "https://booth.pm/en/items/3821902",
+		"description": "Convert DyanmicBone based Avatar into PhysBone without having DynamicBone asset.",
+		"thumbnail": "https://booth.pximg.net/56c71092-5705-4907-97ed-1916ce9a55a3/i/3821902/dc82fe70-5aab-4d34-bca8-73d5a9120541_base_resized.jpg",
+		"timestamp": "2022-04-29T00:07:50Z"
+	},
+	{
+		"id": "7e6f56cef131a3d0490812e2bf39bafc2839da2d",
+		"name": "Yash's Avatar Dynamics VRC Keyboard",
+		"creator": "Yash",
+		"link": "https://docs.google.com/document/d/1V6Yy_gsAcsyYQnoqqpoAxwnTYuk8q6O80czUglVQGhE/edit?usp=sharing",
+		"description": "A Shader/Animator keyboard prefab for avatars using avatar dynamics!",
+		"timestamp": "2022-04-28T08:05:59Z"
+	},
+	{
+		"id": "b3c842d84d06865daeadca6d2d153f7f4b72d61b",
+		"name": "Yash's Upset Prefab",
+		"creator": "Yash",
+		"link": "https://docs.google.com/document/d/1OS5FNXbzkpR-ZDTgIyEPMHJrhr2WtYj2mrDyuY-YTOY/edit?usp=sharing",
+		"description": "Upset Game using Avatar Dynamics",
+		"timestamp": "2022-04-22T09:19:58Z"
+	},
+	{
+		"id": "4b52e30a4de7a32ca3075c50a902573dd5c03897",
+		"name": "Yash's Stations \u0026 Portals Prefab",
+		"creator": "Yash",
+		"link": "https://docs.google.com/document/d/16wgOdvdzttLbzrzGinOfLl5wWcMHxrrpqi8wBEX4PEw/edit?usp=sharing",
+		"description": "Stations \u0026 Portals Game using Avatar Dynamics",
+		"timestamp": "2022-04-22T09:19:03Z"
+	},
+	{
+		"id": "99ac4568450be72f49ec4773bc59a9157d50f7f4",
+		"name": "Yash's Pretzel Prefab",
+		"creator": "Yash",
+		"link": "https://docs.google.com/document/d/1_Pdizz1wFgEOylV4QIRblR7R4b-zC8HM5iL6wVF1yrA/edit?usp=sharing",
+		"description": "Pretzel Game using Avatar Dynamics",
+		"timestamp": "2022-04-22T09:18:17Z"
+	},
+	{
+		"id": "654afe80afa3d9c5fdb7bf8c563f45544a1563b7",
+		"name": "Yash's Nuisance Prefab",
+		"creator": "Yash",
+		"link": "https://docs.google.com/document/d/14Zpl_6XqekrzpOnutxEhRZb_stxJL1XdAn5GpTTyEbE/edit?usp=sharing",
+		"description": "Nuisance Game using Avatar Dynamics",
+		"timestamp": "2022-04-22T09:17:24Z"
+	},
+	{
+		"id": "7f2ec6810e59dc039eb1f38a4518dd3068616ecb",
+		"name": "Yash's Assume Who Prefab",
+		"creator": "Yash",
+		"link": "https://docs.google.com/document/d/1t926e76q4eYJuJajbIJHkAMZwVNQ305SG9dvmDe9aiw/edit?usp=sharing",
+		"description": "Assume Who Game Using Avatar Dynamics",
+		"timestamp": "2022-04-22T09:16:08Z"
+	},
+	{
+		"id": "58623f25621bf1f3cf41213b859783a9535a172a",
+		"name": "Yash's Bridge4 Prefab",
+		"creator": "Yash",
+		"link": "https://docs.google.com/document/d/1ZzIICsXO7yYTgYf_5IZ8CIDllHeXC_R4IL6J0WIo9v4/edit?usp=sharing",
+		"description": "Bridge4 Game using Avatar Dynamics",
+		"timestamp": "2022-04-22T09:15:15Z"
+	},
+	{
+		"id": "49aaea2b4e5e637e59f5dbdb44d6c77dde53f9ed",
+		"name": "Yash's Bingo Prefab",
+		"creator": "Yash",
+		"link": "https://docs.google.com/document/d/1oZyCLAukeG2Gl2lU8lD0gj7z5t_S0QM1rLbpPZjcOgc/edit?usp=sharing",
+		"description": "Bingo using Avatar Dyanamics!",
+		"timestamp": "2022-04-22T09:13:40Z"
+	},
+	{
+		"id": "ee4744f40ee9d3d9b094897534e1a46196112b7e",
+		"name": "YASH’S AD CHESS PREFAB",
+		"creator": "Yash",
+		"link": "https://docs.google.com/document/d/1o2D-vEm9mhfFY9VcT30WhUagQIU4Onez6fcicoFV5o0/edit?usp=sharing",
+		"description": "Chess using Avatar Dynamics!",
+		"timestamp": "2022-04-22T09:11:56Z"
+	},
+	{
+		"id": "2a2886d7b17c31bbbdfc59c9c1f4ae004c0de631",
+		"name": "Functional  Bass and Piano",
+		"creator": "TheKally",
+		"link": "https://thekally.booth.pm/items/3733087",
+		"description": "Working musical instruments Using the New VRChat physbones",
+		"thumbnail": "https://booth.pximg.net/00945463-2365-41ee-bd82-a12fa8f5191f/i/3733087/dba47494-548f-4a12-b563-f4918f674b04_base_resized.jpg",
+		"timestamp": "2022-03-19T19:43:45Z"
+	},
+	{
+		"id": "702a0126ac82dd23b2255ca3e6de55deb5c43016",
+		"name": "Twitch to VRChat OSC Interactions",
+		"creator": "Fooma and Killers0992",
+		"link": "https://foomaring.gumroad.com/l/lmrjbl",
+		"description": "Twitch to VRChat Interaction, using OSC.\nLet your chat throw objects at your avatar, move you around, or run any animation on your avatar.  Automatically detect subscription events, bits, redeemptions, follows, and any other Twitch event. Demo props, OSC Bot, animations, and sounds included.",
+		"timestamp": "2022-03-17T00:58:31Z"
+	},
+	{
+		"id": "07f9fe91e3f6ea4e9ddf08dedd5f010fbff24c96",
+		"name": "Eyes Kit",
+		"creator": "Mothblocks and Peptron1",
+		"link": "https://github.com/Mothblocks/eyeskit/",
+		"description": "Editor script used for setting up a set of cameras and animations to allow an avatar to \"see through their hands\"",
+		"timestamp": "2022-03-16T23:33:10Z"
+	},
+	{
+		"id": "8602affb46c2fde744486aa95b0a0097fc2e0557",
+		"name": "Expressions Menu Hierarchy Editor",
+		"creator": "Haï~",
+		"link": "https://github.com/hai-vr/av3-expressions-menu-hierarchy-editor",
+		"description": "Edit your avatar menus as if they were objects in your scene hierarchy.\n\nIf your menu has parameters that are missing from your VRCExpressionParameters asset, you can still upload your avatar. It will generate disabled icons that do nothing.",
+		"timestamp": "2022-03-03T02:26:17Z"
+	},
+	{
+		"id": "4c29edf4c0d8c657dc0575bf8c46dbdb441280c6",
+		"name": "WorldObject",
+		"creator": "Oli__",
+		"link": "https://github.com/seanedwards/vrc-worldobject/releases",
+		"description": "vrc-worldobject allows you to create world space props that are network-synced for late joiners.",
+		"thumbnail": "https://i.imgur.com/LlP3wE2.png",
+		"timestamp": "2022-02-25T06:06:03Z"
+	},
+	{
+		"id": "a8dff14974e9f5ba1f886ec66e857f767e00b763",
+		"name": "Constraint Pet",
+		"creator": "Scionzenos",
+		"link": "https://drive.google.com/file/d/1mHXaYFjRS46xlHhB37RQsX1VzlKiYKiC/view?usp=sharing",
+		"description": "Have a pet on your avatar that crawls from bone to bone, following where those bones in real time! Best for things like spiders or other animals that cling onto stuff easily.",
+		"timestamp": "2021-09-23T23:07:18Z"
+	},
+	{
+		"id": "d8a48e0794306fbcf4436a4e4bd832d32b5e30d1",
+		"name": "Idioma (Avatar)",
+		"creator": "Flower Of Good",
+		"link": "https://muffinofgood.booth.pm/items/3301084",
+		"description": "A free to use avatar using stencils for the face.",
+		"thumbnail": "https://booth.pximg.net/21585aef-d15d-4d37-a4c0-663f0592c54f/i/3301084/6413464c-3166-4de8-81b7-7bbaf81e431a_base_resized.jpg",
+		"timestamp": "2021-09-23T20:45:09Z"
+	},
+	{
+		"id": "f88bbce41bf429ebc2f1797ce1ba6f7b7ffa34fd",
+		"name": "MuteMarker",
+		"creator": "kittyn",
+		"link": "https://github.com/ehefk/MuteMarker",
+		"description": "Particle-based marker that lets you pick up and set down the canvas - with 1-click installer",
+		"thumbnail": "https://github.com/ehefk/MuteMarker/blob/main/installation.png",
+		"timestamp": "2021-09-11T00:00:55Z"
+	},
+	{
+		"id": "de2e4992cb6b59cf5f243c600f515779b7a1fb58",
+		"name": "VRC Gesture manager",
+		"creator": "BlackStartx",
+		"link": "https://github.com/BlackStartx/VRC-Gesture-Manager",
+		"description": "A tool that will help you preview and edit your avatar animation directly in Unity.  Available for both VRChat SDK 2.0 and SDK 3.0, in Unity 2018 or 2019.",
+		"thumbnail": "https://github.com/BlackStartx/VRC-Gesture-Manager/blob/master/.markdown/3.2/TestingMove.png",
+		"timestamp": "2021-08-30T22:58:55Z"
+	},
+	{
+		"id": "71af8298d50a167939535451cb4b444d557235d1",
+		"name": "Animated Toggles",
+		"creator": "Scionzenos",
+		"link": "https://drive.google.com/file/d/1SMqOtjkTBPsdt4dJHvV_oIB63rSibr6S/view?usp=sharing",
+		"description": "Three different ways to toggle between two states with a transition in-between them, instead of instantly going from one state to the other. The float based method allows starting and stopping at any point during the transition.",
+		"timestamp": "2021-08-24T22:40:19Z"
+	},
+	{
+		"id": "9c17351428535947c6e0304542177d90c00b7fa2",
+		"name": "Throwable boomerang",
+		"creator": "Ivylistar",
+		"link": "https://1drv.ms/u/s!Ao-_FVu0jkTug74iMIcHIk-no9MQ_w?e=qCYIMm",
+		"description": "Simple constraints based throwable boomerang.",
+		"timestamp": "2021-08-10T22:21:54Z"
+	},
+	{
+		"id": "9dea9dc0b2abae98b7584d21f69da638fd746255",
+		"name": "Unity 2018 to 2019 Cloth Transfer",
+		"creator": "Haï~",
+		"link": "https://github.com/hai-vr/unity-2018-2019-cloth-transfer",
+		"description": "Cloth Transfer is a Unity Editor tool that lets you transfer cloth constraints of a mesh from a Unity 2018 project into a Unity 2019 project.\n\nIt was created mainly to assist migration from Unity 2018 to Unity 2019 in the VRChat social platform.",
+		"thumbnail": "https://repository-images.githubusercontent.com/387810097/6f39accb-0207-4ceb-a1cc-8c2d3d28a3a8",
+		"timestamp": "2021-07-20T19:17:31Z"
+	},
+	{
+		"id": "058e6f55c3ec3e8d17a6cd05f5fbcb15c803b861",
+		"name": "ExpressionsEditor",
+		"creator": "Haï~",
+		"link": "https://github.com/hai-vr/combo-gesture-expressions-av3",
+		"description": "ExpressionsEditor an animation editor that lets you create face expressions with the help of previews.\n\nIt generates a preview of all blendshapes of an avatar, highlighting the area that is being modified by the blendshape. They can then be inserted into an animation with one click.\n\nIn its standalone form, it does not require any SDK of any platform to be installed.",
+		"thumbnail": "https://repository-images.githubusercontent.com/278465928/06b131dd-b856-4ef0-8195-fed82874c744",
+		"timestamp": "2021-07-19T04:27:19Z"
+	},
+	{
+		"id": "9bb88bd92ca4fa22b7cbd46fe285612045b3afbe",
+		"name": "Yash's VRC Keyboard 3.0",
+		"creator": "Yash",
+		"link": "https://docs.google.com/document/d/1Zpw_m7Eu4EgCbg9h_dbgpZk_-bv15APeU2hevK7ro9Q/",
+		"description": "A VRC Keyboard with a 2axis- Puppet Control Selection menu.  Can be used on both Desktop or VR.",
+		"timestamp": "2021-04-19T01:10:54Z"
+	},
+	{
+		"id": "20784c06b8efa0e8bac91789f04bc1a74ee6aaf4",
+		"name": "Pumkin's avatar tools",
+		"creator": "Pumkin",
+		"link": "https://github.com/rurre/PumkinsAvatarTools",
+		"description": "An editor script that adds tools to help you setup avatars faster and easier. It includes a component copier that makes it a lot easier to reimport your avatars, and tools to make your thumbnails nicer.",
+		"thumbnail": "https://user-images.githubusercontent.com/16716633/82481547-2311ae80-9ade-11ea-89d4-5a311c318fe3.gif",
+		"timestamp": "2021-04-05T23:01:54Z"
+	},
+	{
+		"id": "e95e74d430716c935679da68c83c2bdf5bc5f75c",
+		"name": "Yash's Otamatone Prefab",
+		"creator": "Yash",
+		"link": "https://docs.google.com/document/d/1CTslFNzWpkpQgucfiEy_zJFwMVL0UXh6WXERo88uHb0/edit?usp=sharing",
+		"description": "A Playable Otamatone Using Avatar 3.0 (VR ONLY)",
+		"timestamp": "2021-03-28T03:24:34Z"
+	},
+	{
+		"id": "7b680564ec74f36ac96199e41f1a7466f5529d9a",
+		"name": "GoGo Loco",
+		"creator": "Franada",
+		"link": "https://drive.google.com/drive/folders/15TezWr-srzR0kas_FPHrQjC7nPg5d7mb?usp=sharing",
+		"description": "Full control over the locomotion movements animation in game with toggle. 3 PT/desktop can sit anywhere they want with various position. Build in PlaySpace feature.",
+		"timestamp": "2021-02-07T22:20:45Z"
+	},
+	{
+		"id": "f304fe5a742980dea8e18f9a9ccd954fb231a7a6",
+		"name": "Walking Flowerpot (Generic Rigged model)",
+		"creator": "Flower Of Good",
+		"link": "https://muffinofgood.booth.pm/items/2273488",
+		"description": "An AV3 avatar with a Generic rig fully setup with emotes and the like!",
+		"thumbnail": "https://booth.pximg.net/21585aef-d15d-4d37-a4c0-663f0592c54f/i/2273488/1fff1b34-3326-4a84-a8a6-c99f32df5c73_base_resized.jpg",
+		"timestamp": "2021-01-28T02:22:00Z"
+	},
+	{
+		"id": "9ee8d6f0025499bb490e09a890fe22fc14a3097e",
+		"name": "Nos Animator",
+		"creator": "Nosjo",
+		"link": "https://nosjo.xyz/vr/nos_fbt_animator_1.4.unitypackage",
+		"description": "Basicaly an animator to attempt to restore most fbt behavior to sdk2 while still working for non fbt users",
+		"thumbnail": "https://share.nosjo.xyz/Glo4iH.png",
+		"timestamp": "2020-11-10T11:09:29Z"
+	},
+	{
+		"id": "6e6c00d841168c3c5716631e9d82c8852a29fd74",
+		"name": "Yash's Desktop Keyboard",
+		"creator": "Yash",
+		"link": "https://docs.google.com/document/d/1uk0llCm-Eh7RPm-Oy-F2mRC-327zFMKb73TnhRCuV5k/edit#",
+		"description": "A Keyboard you can type with in desktop using the AV3 menu.",
+		"timestamp": "2020-09-26T23:01:59Z"
+	},
+	{
+		"id": "abf3219dd0315305b50d4f0696757fb504ad70dc",
+		"name": "Emoji System",
+		"creator": "Ponponsan",
+		"link": "https://www.v-market.work/ec/items/3756/detail/",
+		"description": "Custom emoji system where you can have your own original emojis with animations. This is vol 1\u00262, which is a VketChan plus+ Pack and a Mokuri Pack",
+		"timestamp": "2020-08-31T17:47:35Z"
+	},
+	{
+		"id": "7d75536f1f96dd188e1cea2c4600ddf8b5028196",
+		"name": "VketChan plus+",
+		"creator": "Ponponsan",
+		"link": "https://www.v-market.work/ec/items/3755/detail/",
+		"description": "Custom modified VketChan packed with Avatars 3.0 content fit for beginner's researching the 3.0 system",
+		"timestamp": "2020-08-31T17:42:31Z"
+	},
+	{
+		"id": "d6f58f79c898b7df6a5662017bb5179dbdec92c6",
+		"name": "Basic Turret Set-up",
+		"creator": "Chen",
+		"link": "https://drive.google.com/file/d/18nNzArNkB5DuPLc5rZeS_olP0IKFb0D7",
+		"description": "A simple set up that can make the turret rotate and adjust via 2-axis puppet.",
+		"timestamp": "2020-08-27T11:50:49Z"
+	},
+	{
+		"id": "df718140c3f79e79b96834399b649688a3c3ceec",
+		"name": "Avatar 3.0 Emulator",
+		"creator": "Lyuma",
+		"link": "https://github.com/lyuma/Av3Emulator",
+		"description": "In-editor emulation of VRChat's Avatar 3.0 PlayableGraph in the editor",
+		"timestamp": "2020-07-13T19:16:55Z"
+	},
+	{
+		"id": "cae564d028c3d09de6a06e6e60a6e8690939e0ac",
+		"name": "Inventory system generator for Avatar 3.0",
+		"creator": "Merlin",
+		"link": "https://github.com/Merlin-san/VRC-Inventory",
+		"description": "Script for generating inventories in Avatar 3.0",
+		"timestamp": "2020-07-10T08:46:56Z"
+	},
+	{
+		"id": "f824e505b0eb7edba29a1f463517a9721778d2da",
+		"name": "ComboGestureExpressions for Avatars 3.0",
+		"creator": "Haï~",
+		"link": "https://github.com/hai-vr/combo-gesture-expressions-av3",
+		"description": "ComboGestureExpressions is an Unity Editor tool that lets you attach face expressions to hand gestures, and automatically generate an Avatars 3.0 animator to match these gestures.",
+		"thumbnail": "https://repository-images.githubusercontent.com/278465928/06b131dd-b856-4ef0-8195-fed82874c744",
+		"timestamp": "2020-07-09T23:20:01Z"
+	}
+]

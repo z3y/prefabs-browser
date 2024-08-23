@@ -26,16 +26,28 @@ concurrency:
 
 jobs:
   # Build job
+  update:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./json-builder
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: "./json-builder/go.mod"
+          check-latest: true
+          cache-dependency-path: |
+            ./json-builder/go.sum
+      - run: go run ./main.go --fetch
+      - run: cp -r ./json-builder/output/*.json ./frontend/public/output/
+
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ./frontend
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          sparse-checkout: ./frontend
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -63,7 +75,6 @@ jobs:
         with:
           path: ./frontend/out
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages

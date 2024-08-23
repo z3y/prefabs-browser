@@ -137,7 +137,7 @@ function PrefabListingFull(prefab: PrefabData) {
           </div> */}
 
           <div className=" -ml-2 self-center">
-            <p className="text-xs text-zinc-400">{dateDisplay}</p>
+            <p className="text-xs font-semibold text-zinc-400">{dateDisplay}</p>
           </div>
         </div>
       </div>

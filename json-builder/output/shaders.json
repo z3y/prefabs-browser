@@ -1,0 +1,821 @@
+[
+	{
+		"id": "c0b9eb170b90e426a8df60ba6e31537f100fd98c",
+		"name": "Audiolink Glitch Shader",
+		"creator": "4liceD",
+		"link": "https://aliced.booth.pm/items/5854895",
+		"description": "Animates your Texture or RenderTexture with glitch and strobe effects controlled by audiolink.",
+		"thumbnail": "https://booth.pximg.net/806da11d-8a6e-4564-b0cf-199fcc498b23/i/5854895/e78469d5-3a5e-4515-97ad-7ff68f7bd2e5_base_resized.jpg",
+		"timestamp": "2024-06-23T13:37:33Z"
+	},
+	{
+		"id": "935b809b5b27ecb209524aac5c9529d3b0f56cd7",
+		"name": "Hash Studios Water Shader",
+		"creator": "Hash Studios LLC",
+		"link": "https://hashstudiosllc.gumroad.com/l/hashstudioswatershader",
+		"description": "A free water shader for the default render pipeline!\n\nThe shader provides customizable properties for waving, movement, and distortion, making it versatile for various water effects.\n\nLearn more at... \nhashstudiosllc.com/hashstudioswatershader",
+		"thumbnail": "https://public-files.gumroad.com/4g9k50w6lxipq3thnmv0rakuz1qq",
+		"timestamp": "2024-05-30T16:53:04Z"
+	},
+	{
+		"id": "c897802f2a0564b4641400d32f5b79cf526fd1be",
+		"name": "Glasses Lens Shader",
+		"creator": "AliceD",
+		"link": "https://aliced.booth.pm/items/5448688",
+		"description": "Shader made for glasses, offers gradient colored reflections, smudge system, optional ltcgi support and optional mic status/xsoverlay indicators",
+		"thumbnail": "https://booth.pximg.net/806da11d-8a6e-4564-b0cf-199fcc498b23/i/5448688/3adfbdbe-a1d3-49b7-8be7-f4e7acbf4f8e_base_resized.jpg",
+		"timestamp": "2024-01-24T12:43:12Z"
+	},
+	{
+		"id": "c1f4caa778796dd0dca260eee6132c7c48b72c20",
+		"name": "ShaderGraph (Modified for Unity 2022 \u0026 VRChat)",
+		"creator": "z3y",
+		"link": "https://github.com/z3y/ShaderGraph",
+		"description": "Modified ShaderGraph Built-in pipeline target for Unity 2022 for VRChat (Forward Rendering only).",
+		"timestamp": "2023-12-16T06:32:08Z"
+	},
+	{
+		"id": "ec96dead74356e10e0c0a5e8bc3095838cb627f8",
+		"name": "Phantom Star for CineShader",
+		"creator": "YIMIR",
+		"link": "https://yimir.gumroad.com/l/PhantomStar",
+		"description": "This shader is converted from Shadertoy to make it usable in Unity. \nOriginal: https://www.shadertoy.com/view/ttKGDt",
+		"thumbnail": "https://public-files.gumroad.com/gx6opc001ab2s1d0nhjqhu8ptwv5",
+		"timestamp": "2023-12-04T01:22:44Z"
+	},
+	{
+		"id": "50e372e2e60a7c0931bc1de0c9fad91120f719f4",
+		"name": "Poiyomi Toon Shader",
+		"creator": "poiyomi",
+		"link": "https://github.com/poiyomi/PoiyomiToonShader",
+		"description": "A feature rich toon shader for unity and VRChat.",
+		"timestamp": "2023-10-13T21:16:44Z"
+	},
+	{
+		"id": "9066b9ab156219c32050fec745126c86c3509792",
+		"name": "Avatar VideoScreen",
+		"creator": "4liceD",
+		"link": "https://aliced.booth.pm/items/5141407",
+		"description": "Simple shader that uses the global property \"_Udon_VideoTex\" to show the worlds video screen on avatars.\nShader has a fallback texture slot for unsupported worlds.\nWorks with ProTV 3.0, comes with udon prefab to make your custom render texture global.",
+		"thumbnail": "https://booth.pximg.net/806da11d-8a6e-4564-b0cf-199fcc498b23/i/5141407/31f967a7-fbcd-4b71-9712-365b6a2166d4_base_resized.jpg",
+		"timestamp": "2023-10-06T09:24:09Z"
+	},
+	{
+		"id": "1aa9374bef8ddd5bad757676a96867720745364c",
+		"name": "UniTAE",
+		"creator": "lox9973",
+		"link": "https://gitlab.com/lox9973/UniTAE",
+		"description": "TAESD (Tiny AutoEncoder for Stable Diffusion) ported to Unity pixel shader. It can be used as a neural texture decompressor in VRC.",
+		"timestamp": "2023-09-01T11:30:55Z"
+	},
+	{
+		"id": "c66c12b98882a2c74600f15115c65f693c8d5f34",
+		"name": "Taken",
+		"creator": "YIMIR",
+		"link": "https://yimir.gumroad.com/l/taken",
+		"description": "Destiny 2 Taken Shader Remake",
+		"thumbnail": "https://public-files.gumroad.com/hsc813xj9b9wc5w4o8mog7kst5w6",
+		"timestamp": "2023-07-25T15:36:08Z"
+	},
+	{
+		"id": "5f70fd2147139bbe484eca17a636eda11735b160",
+		"name": "Audio Ink",
+		"creator": "ArchiTechAnon",
+		"link": "https://gitlab.com/-/snippets/2564474",
+		"description": "Audio Ink was a shader originally designed for the Vibe Inc world (https://vrchat.com/home/world/wrld_a5e12310-5459-4a59-ab06-a731f735d298)\nThis is a shader that is build with Line/Trail Renderers in mind, but can be used anywhere.\nIt pulses the UV with a color shift across the horizontal UV axis.\nSupports multiple shaping options.\nMIT License.\nCreated with Amplify Shader Editor, so you can use that to modify or improve the shader if you want.",
+		"timestamp": "2023-06-29T19:13:40Z"
+	},
+	{
+		"id": "b4cd8013188d369e7e72d6027beb8fa4a91339cc",
+		"name": "Lit Armband Shader",
+		"creator": "4liceD",
+		"link": "https://aliced.booth.pm/items/4615401",
+		"description": "Animated armband shader that it designed to show off your name or logos. The texture input supports RGB and cutout. Comes in 3 varations. \n-Simple rotating shader with no dependencies needed \n-Audiolink shader that needs vcc audiolink imported to get a waveform and animated borders in audiolink compatible worlds\n-LTCGI that has everything of the audiolink version plus ltcgi realtime lighting in compatible worlds and needs the vpm version of audiolink imported into your project. https://vpm.pimaker.at/",
+		"thumbnail": "https://booth.pximg.net/806da11d-8a6e-4564-b0cf-199fcc498b23/i/4615401/84794e01-ddbf-4ed2-ad4d-a2080f77d6de_base_resized.jpg",
+		"timestamp": "2023-06-29T10:08:39Z"
+	},
+	{
+		"id": "9fe673d8d716809226ec617781e97bad88b0fa42",
+		"name": "FPSGraphShader",
+		"creator": "ZekkVRC",
+		"link": "https://github.com/ZekkVRC/FPSGraphShader",
+		"description": "A graph of local FPS",
+		"timestamp": "2022-12-28T00:21:49Z"
+	},
+	{
+		"id": "55f5e94679ae83c19b9a6c37ec47d23b013dc1b7",
+		"name": "Trixies' Interior Mapping",
+		"creator": "Trixelized",
+		"link": "https://drive.google.com/file/d/16pCw6sLcGuGnSHwuKChcoaUqnNkelS3g/view?usp=sharing",
+		"description": "A very basic parallax interior mapping shader, designed for Quest worlds. Makes it look like there's actually rooms behind a building's windows.",
+		"thumbnail": "https://i.imgur.com/a/LyBLgcr.png",
+		"timestamp": "2022-11-14T07:38:16Z"
+	},
+	{
+		"id": "b633aa20dcdb4e642746f2ae99447607e95cc689",
+		"name": "Camera Blocker",
+		"creator": "orels1",
+		"link": "https://orels1.github.io/orels-vrc-packages/",
+		"description": "A simple prefab that allows you to make areas where player handheld/drone cameras get filled with pure black so they can't see what they aren't supposed to",
+		"timestamp": "2022-10-25T09:26:53Z"
+	},
+	{
+		"id": "f327f876b9f27fcfe176af2547662fe1245c3903",
+		"name": "Fionna's Creepy Shader",
+		"creator": "Fionna",
+		"link": "https://fionna.booth.pm/items/4200235",
+		"description": "A set of creepy blob shaders and example materials for animated blobs, eggs, eyeballs",
+		"thumbnail": "https://booth.pximg.net/d5492b6f-f9a3-4b71-b81c-d2eb376aad34/i/4200235/e5095c0b-61a8-4fcd-8dd0-77ceae110d36_base_resized.jpg",
+		"timestamp": "2022-09-26T21:38:28Z"
+	},
+	{
+		"id": "a607b0b438dfb05ffa024e22fae7e9d745b42f0f",
+		"name": "ToonLinkWaterShader",
+		"creator": "MMMaellon",
+		"link": "https://github.com/MMMaellon/ToonLinkWaterShader",
+		"description": "Looks like water in Toon Link",
+		"timestamp": "2022-09-20T02:43:38Z"
+	},
+	{
+		"id": "263fdab523403874a2e5e1b2b2713f42ab19de21",
+		"name": "Point Pillars in UnityCG",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/Point-Pillars-in-UnityCG",
+		"description": "3D object detection (cars, people, cyclists) with machine learning inside VRChat using a point cloud as input. It's similar to systems used in self driving cars, although my implementation is a bit slow.",
+		"timestamp": "2022-09-19T10:21:15Z"
+	},
+	{
+		"id": "3f5c2fb25d37526989fbade14436e3a048e8a645",
+		"name": "Raymarching with the ShadowCaster",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/Raymarching-with-ShadowCaster",
+		"description": "An example of using depth with raymarching to interact with standard mesh objects in Unity. Also uses a trick of sampling it's own depth in other shader passes to avoid marching multiple times.",
+		"thumbnail": "https://i.imgur.com/LOpZ3zB.gifv",
+		"timestamp": "2022-09-19T10:16:08Z"
+	},
+	{
+		"id": "6566a93fdf6e97b0370a8d72d3734391b03eb42c",
+		"name": "PZ Video Shader",
+		"creator": "labthe3rd",
+		"link": "https://labthe3rd.gumroad.com/l/PZVideoShadder",
+		"description": "A video player shader for vrchat that has controls for special effects.",
+		"thumbnail": "https://public-files.gumroad.com/n91iwvj2u7g11pkuzev3lkfteftn",
+		"timestamp": "2022-09-18T20:58:17Z"
+	},
+	{
+		"id": "2fdea706c9f3e7cd8877b4781dec17b1905aca2c",
+		"name": "StencilExamples",
+		"creator": "wata_pj",
+		"link": "https://github.com/watapj/Stencil-Examples",
+		"description": "Examples used to only reveal objects when viewed through a transparent frame or lens, using shader stencils.",
+		"timestamp": "2022-09-11T23:26:56Z"
+	},
+	{
+		"id": "584a7692cb19d10436b7b84c42f0ae07934561b3",
+		"name": "Geometry Dissolve",
+		"creator": "Vilar",
+		"link": "https://github.com/Vilar24/VilarVRC#geometry-dissolve",
+		"description": "Easy to use shader that allows you to have a cool geometrical dissolve effect. Uses case examples being like for when you go AFK.",
+		"thumbnail": "https://files.catbox.moe/zyhwzi.gif",
+		"timestamp": "2022-07-14T06:59:36Z"
+	},
+	{
+		"id": "4429b0b622bf9fb8258adb75299d5cb19a0f2317",
+		"name": "Shader Graph Importer",
+		"creator": "z3y",
+		"link": "https://github.com/z3y/ShaderGraph",
+		"description": "A way to import built-in Shader Graph shaders and use them in VRChat with additional features",
+		"timestamp": "2022-07-06T22:03:37Z"
+	},
+	{
+		"id": "138fb67238ae82855413c72e366366f93e335d2c",
+		"name": "Rainy Glass Shader",
+		"creator": "Toadstorm",
+		"link": "https://github.com/toadstorm/RainyGlassShader",
+		"description": "A customizable shader for creating rain-on-glass effects. PC and Quest compatible.",
+		"timestamp": "2022-06-25T20:34:20Z"
+	},
+	{
+		"id": "a8af58c8dce3e29173596357829e525bc008114d",
+		"name": "Demkeys Color Grid",
+		"creator": "Demkeys",
+		"link": "https://github.com/Demkeys/DemkeysUnityShaders/tree/master/ColorGrid",
+		"description": "A color grid implemented in a fragment shader, that executes instructions to perform various grid operations.",
+		"timestamp": "2022-05-31T06:48:15Z"
+	},
+	{
+		"id": "1464b23de9012cb2c318832a60ada6ead80319a6",
+		"name": "Simple Counter Shader (VRChat OSC Ready)",
+		"creator": "RED_SIM",
+		"link": "https://drive.google.com/file/d/1zVt5sZuJH7PJTrHRjK43HFMEnTSXlWW-/view?usp=sharing",
+		"description": "Basically displays an Integer value using a single material. Uses SDF technology to be perfectly crisp in both VR and Desktop.",
+		"thumbnail": "http://sim.red/f220221213732/16543TGCta.gif",
+		"timestamp": "2022-02-21T20:26:00Z"
+	},
+	{
+		"id": "2f06539300a4b67df51a2ed17f96e0e2688ed526",
+		"name": "LTCGI",
+		"creator": "_pi_",
+		"link": "https://github.com/pimaker/ltcgi",
+		"description": "Optimized plug-and-play realtime area lighting using the linearly transformed cosine algorithm. Makes video players emit light onto surroundings.",
+		"timestamp": "2022-01-31T23:19:08Z"
+	},
+	{
+		"id": "6e9abd62b765b61fb107c813c6fa3f1a6428ae78",
+		"name": "Fishy",
+		"creator": "_pi_",
+		"link": "https://github.com/PiMaker/VRChatUnityThings#fishy",
+		"description": "Raymarched fish for your avatar or world. Sometimes they drift to AudioLink. Exhibit at ShaderFes 2021.",
+		"thumbnail": "https://github.com/PiMaker/VRChatUnityThings/raw/main/images/fishy.jpg",
+		"timestamp": "2022-01-11T22:11:54Z"
+	},
+	{
+		"id": "f068c9b2aac6e0385d1fe1381753170a32a8031a",
+		"name": "Memory Dream Rail",
+		"creator": "Shadowriver",
+		"link": "https://www.store.vket.com/ec/items/4625/detail/",
+		"description": "Geometry shader that changes mesh in to rail of looping photos from multiple spread sheets, supports stereoscopic 3D images as well as flip book animations. Have different positioning configurations and fade effects. Good for photo gallery, but also with manual progression parameter it can controlled from external sources, like Udon or Avatars 3.0, for example for UI purposes.",
+		"timestamp": "2021-12-30T00:00:00Z"
+	},
+	{
+		"id": "fbc3d757aabade39f8308b7e966a7763e57b9cc6",
+		"name": "Retro Sprite Shader V2",
+		"creator": "error.mdl",
+		"link": "https://drive.google.com/file/d/1bIWSjK-4uYNb1x1qcUmsNzJ9c2OxqhlX/view",
+		"description": "Simple shader that emulates the behavior of directional sprites from many mid-90's pseudo-3d games (Wolfenstein, Doom, Hexen, Duke Nukem, Daggerfall, Marathon, etc.)",
+		"timestamp": "2021-12-13T00:00:00Z"
+	},
+	{
+		"id": "3ca8a135b9336c593e2cd7e314a1490d784b4af7",
+		"name": "Party FX - AudioLink Shader",
+		"creator": "tsuna moo",
+		"link": "https://tsunamoo.booth.pm/items/3462959",
+		"description": "This is the shader that drives all my AudioLink effects.\n\nIt has options for a variety of things.\n- PBR\n- Emission Effects\n- Rimlight\n- Noise Distort\n- Multiband AudioLink Effects\n- AudioLink Shake Effects\n- Audio Bars\n- Audio Graphs",
+		"thumbnail": "https://booth.pximg.net/c2109325-0f4d-4ef5-a430-433b53f305cf/i/3462959/f306f4ab-30f9-42cb-9dce-c953c14985b1_base_resized.jpg",
+		"timestamp": "2021-11-29T00:00:00Z"
+	},
+	{
+		"id": "d7f2f211ba13c9bd244c4903e85c673f8b5fc253",
+		"name": "Simple Glass - Glass Shader",
+		"creator": "tsuna moo",
+		"link": "https://tsunamoo.booth.pm/items/3466641",
+		"description": "This is my glass shader. It is inspired by GTA.\nIt is fairly simple but has a secret.\nIt is more opaque at around 90 degree angles as well as more reflective.\nThis makes glass more visible and gives it a better look without looking less like glass.\n\nIt also has options for a faint glow.",
+		"thumbnail": "https://booth.pximg.net/c2109325-0f4d-4ef5-a430-433b53f305cf/i/3466641/4c62dfa3-1dfc-47c0-b453-70444acac5fa_base_resized.jpg",
+		"timestamp": "2021-11-29T00:00:00Z"
+	},
+	{
+		"id": "b79e12563c67df02d9d6afabcf97e8a5cb0477ac",
+		"name": "Crystal Water - Flowing Water Shader",
+		"creator": "tsuna moo",
+		"link": "https://tsunamoo.booth.pm/items/3469326",
+		"description": "This shader is a performant water shader that supports flowmaps.\n(It does not use Depth or ScreenSpace)\n\nIt is best used indoor as well as fountains and smaller water objects. (It is not a good choice for oceans)",
+		"thumbnail": "https://booth.pximg.net/c2109325-0f4d-4ef5-a430-433b53f305cf/i/3469326/9e3f56a9-e0db-4985-ba48-745e89a59f0b_base_resized.jpg",
+		"timestamp": "2021-11-29T00:00:00Z"
+	},
+	{
+		"id": "a82683ee64bc011aafdac9cf2bd40331e0e1b87b",
+		"name": "Japanese Handwriting Classification",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/Japanese-Handwriting-Classification-with-Fragment-Shaders",
+		"description": "Japanese handwriting classification using a new and compact convolution model converted into fragment shaders to be used inside VRChat or Unity.",
+		"timestamp": "2021-11-22T00:00:00Z"
+	},
+	{
+		"id": "024f763430c01a15bf3c8864dfcf0e803bd83edb",
+		"name": "Lit Shader",
+		"creator": "z3y",
+		"link": "https://github.com/z3y/shaders",
+		"description": "A Standard shader replacement for VRChat Worlds with lots of features.",
+		"thumbnail": "https://repository-images.githubusercontent.com/437561244/a604abb8-7c6d-47b1-baca-090269271cc2",
+		"timestamp": "2021-11-07T00:00:00Z"
+	},
+	{
+		"id": "f4e7bfc9fb8aa3da3e0d9b5a2600f7f2fac556f9",
+		"name": "Language Translation with Fragment Shaders",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/Language-Translation-with-Fragment-Shaders",
+		"description": "An English to Japanese translator made for VRChat in fragment shaders",
+		"timestamp": "2021-09-18T00:00:00Z"
+	},
+	{
+		"id": "9be1be2d032e586c78b6bcc0805f862fa39f6947",
+		"name": "Simple Water FX",
+		"creator": "tsuna moo",
+		"link": "https://booth.pm/en/items/3259425",
+		"description": "A unlit frag water shader optimized for quest and performance.",
+		"thumbnail": "https://booth.pximg.net/c2109325-0f4d-4ef5-a430-433b53f305cf/i/3259425/fbe18ab7-fc67-4e65-9f07-a777da6db62d_base_resized.jpg",
+		"timestamp": "2021-09-10T00:00:00Z"
+	},
+	{
+		"id": "41691b27de40f438dbfbff9647e30a9adaa9c61d",
+		"name": "Amplify Editable Mirror Shader",
+		"creator": "tsuna moo",
+		"link": "https://tsunamoo.booth.pm/items/2899626",
+		"description": "The vrchat mirror shader but editable in amplify.",
+		"thumbnail": "https://booth.pximg.net/c2109325-0f4d-4ef5-a430-433b53f305cf/i/2899626/3c881c7d-aad2-4b77-9911-029773cab8c2_base_resized.jpg",
+		"timestamp": "2021-07-28T00:00:00Z"
+	},
+	{
+		"id": "e3e84c0f37d3b10f4b00b29daaff4b78d0720144",
+		"name": "Instant Latex Shader",
+		"creator": "Rollthered",
+		"link": "https://rollthered.booth.pm/items/3092320",
+		"description": "This is a drag and drop latex shader that uses offset vectors and fresnel for minimal file size. No textures, all math!",
+		"thumbnail": "https://booth.pximg.net/20bfc768-6a56-4c18-9662-585a35e1899f/i/3092320/e13a6e04-55ad-4753-9e0a-da9a791219c3_base_resized.jpg",
+		"timestamp": "2021-07-02T00:00:00Z"
+	},
+	{
+		"id": "5976eb10703834df2cffe34489466694039e1b24",
+		"name": "Flux Shader",
+		"creator": "Rollthered",
+		"link": "https://rollthered.booth.pm/items/3092302",
+		"description": "Flux is a screen space shader for avatars designed to mitigate bloom in worlds for people with sensitive eyes!",
+		"thumbnail": "https://booth.pximg.net/20bfc768-6a56-4c18-9662-585a35e1899f/i/3092302/a5a7a121-90d8-45ad-9f8e-606d434cec6c_base_resized.jpg",
+		"timestamp": "2021-07-02T00:00:00Z"
+	},
+	{
+		"id": "4601cef20f60eea765acd53738a15bd8e1e8c979",
+		"name": "Fire Lite",
+		"creator": "Rollthered",
+		"link": "https://rollthered.booth.pm/items/2431616",
+		"description": "Fire Lite is a shader that uses a displaced outline pass to simulate a flame effect! Worlds powered by Audio Link will also dynamically effect this shader to react to music.",
+		"thumbnail": "https://booth.pximg.net/20bfc768-6a56-4c18-9662-585a35e1899f/i/2431616/7fd089a4-0a29-4a56-82f2-00aa9350db63_base_resized.jpg",
+		"timestamp": "2021-07-01T00:00:00Z"
+	},
+	{
+		"id": "40463764d67d80a5a93a89dd97c43f3b8e966fb0",
+		"name": "Virus LQP-79",
+		"creator": "fuopy",
+		"link": "https://github.com/fuopy/viruslqp79-shader",
+		"description": "Action-adventure game. Save your neighbors from a zombie outbreak in this shader port of TEAM a.r.g's Arduboy classic, Virus LQP-79!",
+		"timestamp": "2021-06-30T00:00:00Z"
+	},
+	{
+		"id": "721d26e5a7d52e88ee8bf290d258f99ab99a446d",
+		"name": "Low-poly-style procedural night skybox",
+		"creator": "_pi_",
+		"link": "https://github.com/PiMaker/VRChatUnityThings#procedural-night-skybox",
+		"description": "Simple procedural night skybox. Optimized, and comes with a script to capture into a static asset for Quest.",
+		"timestamp": "2021-06-30T00:00:00Z"
+	},
+	{
+		"id": "aae7aea774d6c0ba0bc892caf5fe142156eab59b",
+		"name": "Manga Shader",
+		"creator": "_pi_",
+		"link": "https://github.com/PiMaker/VRChatUnityThings#manga-shader",
+		"description": "A manga-style realtime shadow shader. Most useful for flooring and walls.",
+		"timestamp": "2021-06-30T00:00:00Z"
+	},
+	{
+		"id": "8b80e4b9162138d8353f0b19f031dbdbdbe1a44b",
+		"name": "Aurora (w/ AudioLink)",
+		"creator": "_pi_",
+		"link": "https://github.com/PiMaker/VRChatUnityThings#aurora",
+		"description": "Raymarched aurora shader, highly optimized and reacts to AudioLink.",
+		"timestamp": "2021-06-30T00:00:00Z"
+	},
+	{
+		"id": "fe333b82b4952d680eb3ed0626cfd03b6e5e0b80",
+		"name": "3D Face Landmark Detection",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/3D-Face-Landmark-in-UnityCG-HLSL",
+		"description": "Converts a RGB camera input of a face into 3D points (landmarks) on a face mesh with iris tracking. Both face and iris neural network models implemented with shaders using CRTs.",
+		"timestamp": "2021-06-15T00:00:00Z"
+	},
+	{
+		"id": "8dde467d6230921ba9dad2a7afa61c1fa67f7a62",
+		"name": "VR Stage Lighting",
+		"creator": "AcChosen",
+		"link": "https://github.com/AcChosen/VR-Stage-Lighting",
+		"description": "A collection of HLSL shaders, UdonSharp scripts, 3D models, prefabs, and assets designed to emulate the real control, quality, and complexity of professional stage lighting into VRChat in as many ways as possible.",
+		"timestamp": "2021-05-26T00:00:00Z"
+	},
+	{
+		"id": "ff1a7ebfd8517485545a23d7c5a8baea1e180b49",
+		"name": "orels1 AudioLink Shader",
+		"creator": "orels1",
+		"link": "https://github.com/orels1/orels1-AudioLink-Shader",
+		"description": "A simple shader that adds AudioLink effects to avatars",
+		"timestamp": "2021-05-02T00:00:00Z"
+	},
+	{
+		"id": "09325700261d32c1ba75bcda38ed016fbb0c336b",
+		"name": "YOLOv4-tiny Object Detector in a Shader",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/YOLOv4-Tiny-in-UnityCG-HLSL",
+		"description": "A modern object detector inside fragment shaders for VRChat",
+		"timestamp": "2021-04-09T00:00:00Z"
+	},
+	{
+		"id": "bc7b623b687cbfa153222a208d7dbfc3046d9571",
+		"name": "MUI Shader",
+		"creator": "Merlin",
+		"link": "https://github.com/MerlinVR/MUI",
+		"description": "Modification of the Unity builtin UI shader that fixes the edges of quads being visible on text characters",
+		"timestamp": "2021-04-05T00:00:00Z"
+	},
+	{
+		"id": "3bab557fd83d95629ff49a42c317b16c1d500618",
+		"name": "ShaderMotion",
+		"creator": "lox9973",
+		"link": "https://gitlab.com/lox9973/ShaderMotion",
+		"description": "A shader-based humanoid motion codec and avatar animator",
+		"timestamp": "2021-04-03T00:00:00Z"
+	},
+	{
+		"id": "4384c8742b129fc5a75d9e62568cab78e11bcc18",
+		"name": "QuestVRCPano",
+		"creator": "Lhun",
+		"link": "https://drive.google.com/file/d/1Gc1KOn3_mXObVPF3Q5BIDk5qJN3sMcis/view?usp=sharing",
+		"description": "VRCPano, but working on quest with render textures. I can't take full credit for this but I applied a fix generally based on other MIT/CC0 sources in 360VR video circles",
+		"timestamp": "2021-03-10T00:00:00Z"
+	},
+	{
+		"id": "800c3a1677d1ea3958e43887233599dd8e77d271",
+		"name": "Voice Recognition Shader",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/Voice-Recognition-Shader",
+		"description": "Audio detection with visemes controlling a robot doggo done with shaders.",
+		"timestamp": "2021-03-04T00:00:00Z"
+	},
+	{
+		"id": "bb90ecb2e86c3cca2a6c9811fcff40de8cb97dd7",
+		"name": "Sunshine Flare",
+		"creator": "Silent",
+		"link": "https://s-ilent.booth.pm/items/2658287",
+		"description": "A shader that renders a lens flare and crepuscular rays (sun rays) from the sun over the scene, for Unity/VRchat.",
+		"thumbnail": "https://booth.pximg.net/da52898a-55fb-47ad-bd28-d1e52668811d/i/2658287/1cd367dd-b4a7-4066-9380-e3e99891a410_base_resized.jpg",
+		"timestamp": "2021-01-23T00:00:00Z"
+	},
+	{
+		"id": "b7541b6c31807b3babc191747d2cf5f9d38cea08",
+		"name": "VRC  Mirror Inside Area",
+		"creator": "Silent",
+		"link": "https://s-ilent.booth.pm/items/2552410",
+		"description": "A shader that renders the area's reflection probe on the inside, which is only visible through a mirror. This is useful for creating a low-quality proxy background of a space for the mirror reflection.",
+		"thumbnail": "https://booth.pximg.net/da52898a-55fb-47ad-bd28-d1e52668811d/i/2552410/bf1051eb-1064-47fd-b7e2-0ef50b127452_base_resized.jpg",
+		"timestamp": "2021-01-23T00:00:00Z"
+	},
+	{
+		"id": "24523bf123042c7e1d3fb83a15308656878ab978",
+		"name": "orels1 Unity Shaders",
+		"creator": "orels1",
+		"link": "https://github.com/orels1/orels1-Unity-Shaders",
+		"description": "A collection of variety unity shaders, currently containing a fancy wave effect and an Ice parallax-based shader. To be expanded with more shaders as I have time",
+		"thumbnail": "https://repository-images.githubusercontent.com/330476722/3d073f4f-28ca-4fc1-a1a7-ca2146ac400d",
+		"timestamp": "2021-01-20T00:00:00Z"
+	},
+	{
+		"id": "aeaa6e2b5985e3bc5595715673b24dc9e460663f",
+		"name": "VRCPlayersOnlyMirror",
+		"creator": "Temporal",
+		"link": "https://github.com/acertainbluecat/VRCPlayersOnlyMirror",
+		"description": "A simple shader gimmick to have mirrors reflect players only without any background with some minor caveats. Comes with basic prefabs for sdk2 and sdk3 with simple slider for adjusting the mirror transparency.",
+		"timestamp": "2021-01-18T00:00:00Z"
+	},
+	{
+		"id": "e35b81bc0755d4430480280e2f62c23297c8ceeb",
+		"name": "Pix2Pix in a Fragment Shader",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/Pix2Pix-in-a-Fragment-Shader",
+		"description": "An image to image deep learning network that outputs images based on random inputs.",
+		"thumbnail": "https://raw.githubusercontent.com/SCRN-VRC/Pix2Pix-in-a-Fragment-Shader/master/Images/project.png",
+		"timestamp": "2020-10-18T00:00:00Z"
+	},
+	{
+		"id": "9feba8e1a86a226c8878c72a7536558b364faaa8",
+		"name": "StereoCancer",
+		"creator": "xwidghet",
+		"link": "https://github.com/xwidghet/StereoCancer",
+		"description": "An open-source stereo-correct screen-space shader for Unity, mainly intended for usage in animations and games such as VRChat",
+		"timestamp": "2020-09-15T00:00:00Z"
+	},
+	{
+		"id": "b2928a21285e098a8f49b2d7d5a9baba29bab9f9",
+		"name": "Cancerspace",
+		"creator": "Red_Mage",
+		"link": "https://github.com/AkaiMage/VRC-Cancerspace",
+		"description": "A screenspace shader made for VRChat with a heavy focus on configurability and specifically made for, but not limited to, use with animations",
+		"timestamp": "2020-09-15T00:00:00Z"
+	},
+	{
+		"id": "035cbaf70923ab5aa154e91f04526dda43cc1a0b",
+		"name": "AKStandard / AKUnlit",
+		"creator": "AoiKamishiro",
+		"link": "https://github.com/AoiKamishiro/UnityShader_CustomBuiltin",
+		"description": "Modifications StandardShader and UnlitShader.\nThe Standaerd shader has support for roughness maps and can switch between culling modes.\nThe Unlit shader supports both texture and color inputs and can switch between Opaque and Transparent without changing the shader.",
+		"timestamp": "2020-09-13T00:00:00Z"
+	},
+	{
+		"id": "c2b1f753bc94767d7d8f85e419eac88ecb176c12",
+		"name": "SimpNet Deep Learning in a Shader",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/SimpNet-Deep-Learning-in-a-Shader",
+		"description": "A trainable convolutional neural network inside a fragment shader",
+		"timestamp": "2020-09-03T00:00:00Z"
+	},
+	{
+		"id": "ec69bcdf1968373ba82c7c7d508e33e6b286b1b1",
+		"name": "ShaderIK",
+		"creator": "lox9973",
+		"link": "https://gitlab.com/lox9973/shaderik",
+		"description": "Custom fullbody IK done in shader",
+		"timestamp": "2020-07-12T00:00:00Z"
+	},
+	{
+		"id": "566d5ee9e12f46e7cd70193594dfe06127fdb799",
+		"name": "UV Sky",
+		"creator": "Synergiance",
+		"link": "https://github.com/synergiance/Unity-Shaders/tree/master/UV%20Sky",
+		"description": "360° video skybox shader.  Use the slider to change the orientation.",
+		"timestamp": "2020-06-27T00:00:00Z"
+	},
+	{
+		"id": "2e93879ecc4e2f1c4e6a4da5791ea7ef44ce2baf",
+		"name": "Synergiance Toon Shader",
+		"creator": "Synergiance",
+		"link": "https://github.com/synergiance/Synergiance-Shaders-For-Unity",
+		"description": "A general purpose toon shader specialized for MMD style shading",
+		"timestamp": "2020-06-16T00:00:00Z"
+	},
+	{
+		"id": "f7fec3ca02ea4afcfc8776f815f34860ffb9056e",
+		"name": "Chess Shader With Artificial Intelligence",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/Chess-Shader-With-Artificial-Intelligence",
+		"description": "A simple AI implemented using the classic minimax algorithm except it's on a GPU.",
+		"timestamp": "2020-06-12T00:00:00Z"
+	},
+	{
+		"id": "4eeb4a78fca0ff8bf109ae91672c8cc59424ee63",
+		"name": "Handholding Shader IK",
+		"creator": "Haï~",
+		"link": "https://github.com/hai-vr/handholding-shader-ik",
+		"description": "This shader allows two avatars to be holding hands, mainly designed for dancing.\n\nA very simplistic IK system is reprogrammed within the shader code to control a fake arm of one avatar, which will be attracted towards a special light of another avatar.\n\nAs it is a shader, the effect is not affected by lag: It will give the appearance of handholding from the perspective of everyone with shaders and particles enabled, no matter the delay between the two dancers.",
+		"thumbnail": "https://repository-images.githubusercontent.com/239149913/e2c7f080-4f30-11ea-8e9e-3c402d60d573",
+		"timestamp": "2020-02-14T00:00:00Z"
+	},
+	{
+		"id": "d22535f273a4831f7ef708478580bc29eb68e44f",
+		"name": "Quest Reflecting Water Ripple Shader",
+		"creator": "1001",
+		"link": "https://pastebin.com/raw/kfzFJSiP",
+		"description": "Extremely performant Quest water shader that reflects the skybox or surroundings and has animated water ripples, written for the Bamboo Temple world, looks great on PC too",
+		"thumbnail": "https://i.gyazo.com/8d9488dbfecbe86b62c55b0e7a67fd63.jpg",
+		"timestamp": "2020-02-05T00:00:00Z"
+	},
+	{
+		"id": "46dacb8a360c2b1fbfcf01f18f6f19b6500951ef",
+		"name": "KungFu Chat",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/KungFu-Chat",
+		"description": "Arcade game written entirely in Unity CG",
+		"thumbnail": "https://i.imgur.com/O3t1yab.png",
+		"timestamp": "2019-12-27T00:00:00Z"
+	},
+	{
+		"id": "034500d3dc360dc19722f675267f5f232e5ae01a",
+		"name": "Shader Based Fireworks",
+		"creator": "RED_SIM",
+		"link": "https://drive.google.com/open?id=1ErIKLvAJ60GaGj11sgXoUXiGb8-5zKTk",
+		"description": "Shader based fireworks, which you can control from a video stream!",
+		"thumbnail": "http://sim.red/f191226233943/10885KZDOv.gif",
+		"timestamp": "2019-12-26T00:00:00Z"
+	},
+	{
+		"id": "86a2fb94851d89050f9e4c267ea31a637285b544",
+		"name": "Perfect Water Shaders by RED_SIM",
+		"creator": "RED_SIM",
+		"link": "https://drive.google.com/open?id=1r_ONfB_fAdmjZw9C_DQnV_30MGf6sM03",
+		"description": "A water shader with almost no visual refraction artifacts and glitches. Supports: Two normal map layers, Ripples and flow animation, Depth fog, Refraction, Lots of color settings, Depth color desaturation, Almost no visual refraction artifacts. Full version also gives you: Underwater fog without post processing, Physically correct underwater surface.",
+		"thumbnail": "http://sim.red/f191210232818/10616pg0ZO.gif",
+		"timestamp": "2019-12-11T00:00:00Z"
+	},
+	{
+		"id": "26f1b9960be485873522a885e996c0ee4ede02af",
+		"name": "noriben Quest Water Shader",
+		"creator": "noriben",
+		"link": "https://noriben.booth.pm/items/1671087",
+		"description": "Lite Water Shader for Quest and PC.",
+		"thumbnail": "https://booth.pximg.net/e21d0fb1-a91d-4e44-8c8b-39f92a18972d/i/1671087/73ece75e-4734-447a-9efc-f46bf8510302_base_resized.jpg",
+		"timestamp": "2019-11-23T00:00:00Z"
+	},
+	{
+		"id": "eb920ad463918eae63eff0e1c26738b83e4d156e",
+		"name": "PixelFont",
+		"creator": "lox9973",
+		"link": "https://gist.github.com/lyuma/18bf52da92428340bab524a025b24101",
+		"description": "Pixelated font shader for 3D Text Mesh, to be used in front of opaque objects",
+		"timestamp": "2019-11-07T00:00:00Z"
+	},
+	{
+		"id": "46c07d8b812be433ee4b5af21823e7cea05be4dc",
+		"name": "Dual Cubemap Skybox",
+		"creator": "Lyuma",
+		"link": "https://gist.github.com/lyuma/38648c33c91a1994b98c5c5d0168a575",
+		"description": "Skybox picks one of two cubemaps based on the light direction",
+		"timestamp": "2019-11-07T00:00:00Z"
+	},
+	{
+		"id": "b7184e9cda84718455ef4d19655094c34d8dd988",
+		"name": "Raymarched Reflections (android/pc)",
+		"creator": "Rhomboid.com",
+		"link": "https://drive.google.com/open?id=1cEbF-_1q2ald_m2NEO8N87J1bUl-A1M4",
+		"description": "This is a GLSL shader I converted to HLSL and debugged for unity made by \"Shane\"",
+		"timestamp": "2019-10-02T00:00:00Z"
+	},
+	{
+		"id": "af92147dbec95c3a868eab5452bd9fa6146b095d",
+		"name": "MerlinUI",
+		"creator": "Merlin",
+		"link": "https://github.com/Merlin-san/MUI",
+		"description": "Modification of the Unity builtin UI shader that fixes the edges of quads being visible on text characters",
+		"timestamp": "2019-07-28T00:00:00Z"
+	},
+	{
+		"id": "8887363f2840a06bf81bdd59c4f9cd330d756da9",
+		"name": "Red's Thousand Mirrors Shader",
+		"creator": "Rollthered \u003c Pretty cool guy",
+		"link": "https://drive.google.com/open?id=1bnf45G71hAt6RlN7DkHTqoMm4YG-y0Kl",
+		"description": "As seen in \"Two Thousand Mirrors\"",
+		"timestamp": "2019-07-09T00:00:00Z"
+	},
+	{
+		"id": "fd0549aa0fa002feef26ab736917d8a7bdd284d4",
+		"name": "Raymarched GPU Particles with Screenspace Physics",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/Raymarched-GPU-Particles-with-Screenspace-Physics",
+		"description": "GPU particles raymarched to look like slime blobs that collides with depth.",
+		"timestamp": "2019-07-07T00:00:00Z"
+	},
+	{
+		"id": "a31ba2b40da5b9564fa9e8d33718c39b7e14aba3",
+		"name": "Face and Object Detection for VRChat",
+		"creator": "SCRN",
+		"link": "https://github.com/SCRN-VRC/Face-and-Object-Detection-for-VRChat/",
+		"description": "A binary classifier implemented with a support vector machine (SVM) used to detected faces or other objects.",
+		"timestamp": "2019-07-07T00:00:00Z"
+	},
+	{
+		"id": "b0d382319b08ad76771fe84ebc0481fe2390fbd4",
+		"name": "Time Shaders",
+		"creator": "y23586",
+		"link": "https://y23586.net/vrchat-time-shaders/",
+		"description": "Displays time based on timezone.",
+		"timestamp": "2019-06-17T00:00:00Z"
+	},
+	{
+		"id": "cc8042a438cfa3c82c0a946d731374a9bbe488dc",
+		"name": "XSToon",
+		"creator": "Xiexe",
+		"link": "https://github.com/Xiexe/Xiexes-Unity-Shaders/releases",
+		"description": "Xiexes Unity Shaders",
+		"timestamp": "2019-06-01T00:00:00Z"
+	},
+	{
+		"id": "abbc773dd9b928bfe45a0df2d98ee52d66720f5a",
+		"name": "3D Video Shaders",
+		"creator": "TCL",
+		"link": "https://github.com/TCL987/UnityShaders/tree/master/TCL987/Shaders/3D",
+		"description": "Shaders for using Side-By-Side and Over-Under video in VRChat.",
+		"timestamp": "2019-04-01T00:00:00Z"
+	},
+	{
+		"id": "22e25a43f663857c610a9c0c1c1c123cfe59807b",
+		"name": "Dafirex's Particle Shader",
+		"creator": "Dafirex",
+		"link": "https://github.com/Dafirex/Noise-Texture-Particles/releases",
+		"description": "Particle Shader that uses noise textures to make particle textures",
+		"timestamp": "2019-03-16T00:00:00Z"
+	},
+	{
+		"id": "c85d73f20049683a60a03e31c119cd0a10a9cd15",
+		"name": "SilVR Water V2.0",
+		"creator": "Sil",
+		"link": "https://drive.google.com/file/d/1pqCJmGjC4QZnm-tIpn9hsPLvbtLPXtBa/view?usp=sharing",
+		"description": "Water shader with wave effect on collide and reflection using mirror \u0026 skybox",
+		"timestamp": "2019-02-14T00:00:00Z"
+	},
+	{
+		"id": "90cf33ba73745ba41901bcd798faac221ed25a81",
+		"name": "PencilSketchEffect",
+		"creator": "khalladay",
+		"link": "https://github.com/khalladay/PencilSketchEffect",
+		"description": "Real Time Hatching In Unity",
+		"timestamp": "2019-02-03T00:00:00Z"
+	},
+	{
+		"id": "af99cdb78ff62a1ebb6d896b9fc34e9938d92afd",
+		"name": "Standard Subsurface Scattering",
+		"creator": "Silent",
+		"link": "https://gitlab.com/s-ilent/standard-subsurface-scattering",
+		"description": "All the features of the Standard with approximated Subsurface Scattering. Perfect for characters and objects made of thin cloth!",
+		"thumbnail": "https://files.catbox.moe/3jbays.png",
+		"timestamp": "2019-01-28T00:00:00Z"
+	},
+	{
+		"id": "25a2062492d9eefc69268dcf758021a74921e26f",
+		"name": "Silent's Cel Shading Shader",
+		"creator": "Silent",
+		"link": "https://gitlab.com/s-ilent/SCSS",
+		"description": "A cel shading shader for VRchat with proper lighting and lots and lots of features!",
+		"timestamp": "2019-01-28T00:00:00Z"
+	},
+	{
+		"id": "17ca79655846c7df660765f735a18e98289a9b5e",
+		"name": "NoeNoe Shaders",
+		"creator": "NoeNoe",
+		"link": "https://docs.google.com/uc?export=download\u0026id=15mBCcsPXy53g8vbb59zkaYZgPXZUyNiB",
+		"description": "Avatar and Overlay Shaders",
+		"thumbnail": "https://i.imgur.com/mgIEz9F.jpg",
+		"timestamp": "2019-01-27T00:00:00Z"
+	},
+	{
+		"id": "d27ef62966824fa54118f034b17b6e0707773b67",
+		"name": "PixelShader MotionTracking LedEffect",
+		"creator": "Dieu / 1001 / Luftprut",
+		"link": "https://drive.google.com/file/d/1NaO1s2mK8iYlvzPXoK8cduU_lsz-mJR9/view?usp=sharing",
+		"description": "Track your character on a wall using a led pixel effect ! Perfect for stages.",
+		"timestamp": "2019-01-05T00:00:00Z"
+	},
+	{
+		"id": "c899c814fbe910f8adfa8da990e6f0db100d7d06",
+		"name": "Pixel texture shader",
+		"creator": "1001",
+		"link": "https://www.dropbox.com/s/zp3fvkgs593iwoq/pixeltexture.shader?dl=0",
+		"description": "Makes textures look pixellated, options for grid and edge colors",
+		"timestamp": "2019-01-03T00:00:00Z"
+	},
+	{
+		"id": "48cdc3210073f0c9fbcc050bf1634427ed0c7e00",
+		"name": "VRChat Mirror Reflection Shader",
+		"creator": "VRChat",
+		"link": "https://www.dropbox.com/s/tzx7lyccr2ybn0l/Mirror.shader?dl=0",
+		"description": "Drop this in your world so the mirror reflection works in unity, they 'forgot' to put it in the SDK",
+		"timestamp": "2018-12-22T00:00:00Z"
+	},
+	{
+		"id": "a84954e9904754eaeb20459ca9300b184df70758",
+		"name": "Liquid drink shader",
+		"creator": "MinionsArt",
+		"link": "https://pastebin.com/ppbzx7mn",
+		"description": "Liquid shader used to act like the object has liquid in it. Can be used for drinks.",
+		"timestamp": "2018-12-07T00:00:00Z"
+	},
+	{
+		"id": "7f734f3469fcda5b866552f6b031ecfb5f0aaa20",
+		"name": "Silent's Clear Water Shader",
+		"creator": "Silent",
+		"link": "https://gitlab.com/s-ilent/clear-water",
+		"description": "A (not too) simple and clean water shader for Unity that focuses on looking nice with nice performance. Uses the scene reflection probes for reflections and depth buffer access for a smooth transition between the edge, foam, water surface and depths.",
+		"timestamp": "2018-12-03T00:00:00Z"
+	},
+	{
+		"id": "fc3152a43d8f8389389e3d7b81a6e0dbae93f822",
+		"name": "Lava Lamp",
+		"creator": "Luftprut",
+		"link": "https://www.dropbox.com/s/1nsbi8sez1kvdbx/Lava%20Lamp.unitypackage?dl=0",
+		"description": "Simple ray-tracing shader and example prefab of spherical lava lamp",
+		"timestamp": "2018-09-05T00:00:00Z"
+	},
+	{
+		"id": "f63c2095cecdd27d8b61442e731819897284c2ad",
+		"name": "SilVR Water Shader v1.1",
+		"creator": "Blake447",
+		"link": "https://drive.google.com/file/d/1K8f6Tke32PGhih8VNxLgfFRg49_ls9aq/view?usp=sharing",
+		"description": "Interactive Water Shader",
+		"timestamp": "2018-09-05T00:00:00Z"
+	},
+	{
+		"id": "0a22b5a6df7958c56e77637d4ab983e5fdd07c75",
+		"name": "Water Reflections",
+		"creator": "Gallium",
+		"link": "https://gitlab.com/vridiot/unity-prefabs/blob/master/WaterReflections/WaterReflections.unitypackage",
+		"description": "Caustic water reflections. Two materials, two shaders. One for projectors onto existing materials, one that's kinda like the standard shader but with the effect in the emission slot.",
+		"timestamp": "2018-09-04T00:00:00Z"
+	},
+	{
+		"id": "a5e6af05b9e7b854bdca4b7e97efdcb65e94d751",
+		"name": "WACOTV Shader",
+		"creator": "WACOMalt",
+		"link": "https://drive.google.com/uc?export=download\u0026id=1xZflnlSTpFRiOhLWU2Wx2Jos68_U0BE_",
+		"description": "This shader was made from the ground up to simulate everything that makes old TVs feel the way they do. You get the individual Phosphor Pixel grid, you get the horizontal and vertical abberation and distrotions. You get wipes of noise moving down the screen, scanline animations, etc. This was made specifically to work with VRChat's VRCVideoSync script, so you can point that to your mesh that has this shader, and tell it to override \"_MainTex\".  It displays a NTSC Color bar test pattern when not overridden.",
+		"timestamp": "2018-06-22T00:00:00Z"
+	},
+	{
+		"id": "e4f993edfa4359a8b8d955fb5f32bc8fe8cf9744",
+		"name": "WACOWater",
+		"creator": "WACOMalt",
+		"link": "https://drive.google.com/file/d/1yvhEQiwvwvW4iXKBiY3aWlJ9vU7juccH/view",
+		"description": "This shader was made from the ground up to simulate everything that makes old TVs feel the way they do. You get the individual Phosphor Pixel grid, you get the horizontal and vertical abberation and distrotions. You get wipes of noise moving down the screen, scanline animations, etc. This was made specifically to work with VRChat's VRCVideoSync script, so you can point that to your mesh that has this shader, and tell it to override \"_MainTex\".  It displays a NTSC Color bar test pattern when not overridden.  In need of a Single-Pass Stereo, VR Compatible water shader?  Maybe mine will help! It's got refraction, supports Reflection probes, or overriding with your own reflection cubemap. Control of fresnel exponent for reflections, and lots of controls for the ripple texture animations. Update: Also now supports LatLong reflection maps (including from render textures!)",
+		"timestamp": "2018-06-22T00:00:00Z"
+	},
+	{
+		"id": "f19a85cf809d183e5b3fccc181462e90db37e28c",
+		"name": "Moving Tree and Grass Shaders",
+		"creator": "1001",
+		"link": "https://www.dropbox.com/s/1a31uyvgls5xj8f/Moving%20Tree%20and%20Grass%20Shaders.zip?dl=0",
+		"description": "Modified diffuse transparent, self illuminating transparent and soft occlusion leaves shaders, just like the unity nature terrain shaders but they wave the grass/trees without having to use terrain!",
+		"timestamp": "2018-06-21T00:00:00Z"
+	}
+]

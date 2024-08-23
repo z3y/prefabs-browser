@@ -1,0 +1,587 @@
+[
+	{
+		"id": "a5d38bd8eb77f1a26305240650f6cc5e79cd2886",
+		"name": "VRC School",
+		"creator": "Jellejurre, JustSleightly",
+		"link": "https://vrc.school/",
+		"description": "Everything you need to know on how to make VRChat Avatar Systems. Documents SDK components, Animator systems, Expression Parameters, and more.",
+		"timestamp": "2024-04-02T17:02:14Z"
+	},
+	{
+		"id": "a671d0273fce3d30dff73be3a76d31897e8be9d8",
+		"name": "VRChat Beginner World Creation 101",
+		"creator": "Lloydish",
+		"link": "https://docs.google.com/document/d/1ZWmqKuL4d_4DAG82GNqco0VR67j5wCK9YOQc5jRvVj8/edit?usp=sharing",
+		"description": "This 2023 tutorial covers everything from getting VCC to the absolute basics of unity to creating your own vrchat world complete with mirror, teleports, text and more! Learn how to do it all for FREE as long as you have the patience and processing power",
+		"timestamp": "2023-07-16T19:56:27Z"
+	},
+	{
+		"id": "21e5882ecbb7f471618a349854d79b967a0a3abe",
+		"name": "How to upload a VRChat Avatar in 12/2022 and 2023 (Creator Companion) tutorial",
+		"creator": "Fuuujin",
+		"link": "https://www.youtube.com/watch?v=7sqnAbPxYnQ",
+		"description": "A tutorial for absolute beginners on how to upload a ready-to-upload tutorial that you bought on Gumroad, Booth, etc.",
+		"timestamp": "2023-01-14T07:05:10Z"
+	},
+	{
+		"id": "7f95548b46f90c3c60996ec035e503bd7ba16f8f",
+		"name": "World Image Guide, including a Template",
+		"creator": "Maebbie",
+		"link": "https://vrclibrary.com/wiki/books/maebbies-precise-solutions/page/world-thumbnail-world-image-guide-including-a-template",
+		"description": "Align your World Thumbnail with great precision, to make the most of your window to the playerbase of VRChat. This Guide showcases an easy to use Template, that you can use to fit your existing thumbnail or as reference for a new one. There are also some tips on what to look out for.",
+		"timestamp": "2022-10-13T19:22:18Z"
+	},
+	{
+		"id": "2bdfbedb577f00860b2b739df650e6a0aca2b90c",
+		"name": "What is PBR?",
+		"creator": "Hyblocker",
+		"link": "https://docs.hyblocker.dev/en/shaders/understanding-pbr/what-is-pbr/",
+		"description": "A page which aims to introduce people to the basics of working with PBR.",
+		"timestamp": "2022-07-26T13:48:27Z"
+	},
+	{
+		"id": "81f799ccfeefdc429f3b288db5c2f545658dfc9e",
+		"name": "Unity Scripted Importers: Introduction",
+		"creator": "orels1",
+		"link": "https://blog.orels.sh/unity-scripted-importers-part-1-texture-generator/",
+		"description": "This is the first part of the Scripted Importer series it looks into into what ScriptedImporters are and how to make one yourself. At the end of this tutorial you'll have a working texture generator you can program to create all kinds of procedural masks and patterns!",
+		"timestamp": "2022-06-09T22:48:35Z"
+	},
+	{
+		"id": "4b1d6ffb4b256fcdb40a291e54c70bda5bef8d0b",
+		"name": "VRChat Avatar Dynamics Tutorial: Grab Prop Toggles Part 1\u00262",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=EfdC3TnCznY\u0026t=3s",
+		"description": "A guide to show how to use Phys Bones grabbing to toggle props",
+		"timestamp": "2022-05-06T23:10:59Z"
+	},
+	{
+		"id": "e86d3df87418cd563ce726ca1029357549dc409c",
+		"name": "VRChat Avatar Dynamics Tutorial: Couples Animations",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=9z8DBGuUREg\u0026t=9s",
+		"description": "A guide on how to make animations that are enabled by specific people",
+		"timestamp": "2022-05-06T23:10:19Z"
+	},
+	{
+		"id": "a498e77008c6b2b4df688f56ad795f1d09de67fb",
+		"name": "Hold Toggles \"Avatar Dynamics*",
+		"creator": "Flower Of Good",
+		"link": "https://www.youtube.com/watch?v=1G3bFhn5g_M\u0026t=7s",
+		"description": "Learn how to quickly set up toggles by holding your hands over an area for a few seconds",
+		"timestamp": "2022-05-05T02:41:00Z"
+	},
+	{
+		"id": "75ed991012f551727a0dea02437c7caa2e9f2fd3",
+		"name": "VRChat Avatar Dynamics Tutorial part 3: How to Test, 4 Level Testing",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=nLXw08gdlQE",
+		"description": "In this guide in give you a brief overview of how test you avatar in editor, in game, and multi multiple clients.",
+		"timestamp": "2022-03-19T18:14:53Z"
+	},
+	{
+		"id": "3c92afa888818d32f3864822aa2914378cea5839",
+		"name": "Unity Beginner's guide for Avatar Customization",
+		"creator": "Reina",
+		"link": "https://secondmoon.booth.pm/items/3683905",
+		"description": "This is a hand-made pdf guide for avatar customization for VRChat using Unity. It is not a simple tutorial. It's a 90+ pages document with examples and pictures explaining how everything works. This is intended for beginners.",
+		"thumbnail": "https://booth.pximg.net/24a1af69-422e-4291-83f4-80819456544b/i/3683905/c5f07d90-ce6c-4d6c-8680-f652b23ce2f6_base_resized.jpg",
+		"timestamp": "2022-03-16T22:07:20Z"
+	},
+	{
+		"id": "5e7fd7d537f307a5a1899b02885d061a3ab99f2f",
+		"name": "LTCGI Screen setup",
+		"creator": "Reava_",
+		"link": "https://www.youtube.com/watch?v=3_f9Cj4bTaM",
+		"description": "an extremely short and straight forward tutorial on how to use LTCGI for your VRChat world. Relatively experienced unity user only.",
+		"timestamp": "2022-03-07T11:38:38Z"
+	},
+	{
+		"id": "1c5a1b11c26f188a4eb699acd397be2b18830a09",
+		"name": "Avatar Dynamics Tutorial part 2:  Interaction (senders, receivers, and grabbing)",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=G8m_RN4Qa6k",
+		"description": "I show you how to use the interaction systems in avatar dynamics",
+		"timestamp": "2022-03-07T06:16:01Z"
+	},
+	{
+		"id": "3f2f1940f02061a1e977bfba55f65bd9dfa76fd9",
+		"name": "Physics Bones Tutorial part 1: Phys Bone Physics",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=B4MTUG9KhVA",
+		"description": "I intro the physics side of phys bones",
+		"timestamp": "2022-03-06T04:13:22Z"
+	},
+	{
+		"id": "27e996e66b3679a1de57e7f4dc834fa98652b21a",
+		"name": "Knowledge Index",
+		"creator": "Haï~",
+		"link": "https://hai-vr.notion.site/hai-vr/Knowledge-Index-f53af3099f414e2080b1c0a7425b54e5",
+		"description": "This is a compilation of many things I've learned while building VRChat content.",
+		"timestamp": "2022-01-24T22:34:41Z"
+	},
+	{
+		"id": "586690001926b2b397df06fed6a5b3265ff9dc34",
+		"name": "Set up twist bones on VRChat Avatar in Unity",
+		"creator": "Iconoclass",
+		"link": "https://youtu.be/_GmAupH5Co0",
+		"description": "Set up twist bones on VRChat Avatar in Unity",
+		"timestamp": "2022-01-19T04:41:24Z"
+	},
+	{
+		"id": "f9aa3377a2acc8c7f32a549595001aed519f1057",
+		"name": "Collision Audio with CyanTrigger",
+		"creator": "Fionna",
+		"link": "https://youtu.be/yJoWldGrv-0",
+		"description": "In this tutorial, Fionna shows how to make sound effects play on collision using CyanTrigger for VRChat's SKD3 worlds.  It will cover two methods--one where the audio varies in pitch based on collision speed, and another in which the speed determines which audio clip to play from a list.",
+		"timestamp": "2022-01-05T00:34:59Z"
+	},
+	{
+		"id": "eac5a28cdd267199dd8379d7b53ea5062e56ffbf",
+		"name": "Beer Pong for CyanTrigger",
+		"creator": "Fionna",
+		"link": "https://youtu.be/QXxAf5u-pUk",
+		"description": "In this tutorial, Fionna shows how to make a beer pong game using CyanTrigger for VRChat's SKD3 worlds.  This tutorial also covers a method for syncing variables to late joiners.\n\nDownload a drag and drop version of this prefab: \nhttps://fionna.booth.pm/items/3502870",
+		"timestamp": "2022-01-05T00:34:14Z"
+	},
+	{
+		"id": "2adfef3e1409ea4e3ca794139718092814471e89",
+		"name": "How to improve and optimize dynamic bones with constraints",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=QjK1lZ272ko",
+		"description": "how to improve how dynamic bones by using constraints to give move control over them.",
+		"timestamp": "2021-12-07T22:56:18Z"
+	},
+	{
+		"id": "11bd04fcc5b3bd13a04771611a937ab0e3049339",
+		"name": "Required Japanese Morph (Blendshape) List for MMD Dance World",
+		"creator": "Original: カフジ / Translated: Tony_Lewis",
+		"link": "https://docs.google.com/spreadsheets/d/1UtOJhJr45gahf2epvQlDxC1AXcJw_hepn1t0HY1mlGI/edit?usp=sharing",
+		"description": "List of Japanese blendshape name required to use MMD dance world. You will need English blendshape key and VRChat Standard blendshape key along with it.",
+		"timestamp": "2021-11-28T23:51:06Z"
+	},
+	{
+		"id": "c3915c4ac6ec3434eb37e7d4fa5ba2e2f561917c",
+		"name": "Player Chime and Toggle Buttons - VRChat Udon CyanTrigger Tutorial",
+		"creator": "Fionna",
+		"link": "https://www.youtube.com/watch?v=Y_-hsqkoU04",
+		"description": "In this tutorial, Fionna goes over some basics of CyanTriggers for VRChat's SDK3.  This example is a Player Join/Leave chime with multiple toggle buttons.\n\nThis tutorial will go over some basic concepts such as variables, Booleans, IF/ELSE statements in CyanTrigger, and how to use CyanTrigger variables between multiple gameobjects.",
+		"timestamp": "2021-10-13T02:48:39Z"
+	},
+	{
+		"id": "e7ddee0641f827ed67a97b041215c0c64c6e45be",
+		"name": "Spin the Bottle - VRChat Udon CyanTrigger Tutorial",
+		"creator": "Fionna",
+		"link": "https://www.youtube.com/watch?v=X6lFU7bi2MU",
+		"description": "This tutorial shows how to set up a simple Spin the Bottle game using CyanTrigger for VRChat's SKD3 worlds.  This tutorial will also cover some basic multiplayer sync logic.",
+		"timestamp": "2021-10-13T02:48:16Z"
+	},
+	{
+		"id": "41e89150e56d70b73fdac7ffc92049e40391ce45",
+		"name": "UI Options - VRChat Udon CyanTrigger Tutorial",
+		"creator": "Fionna",
+		"link": "https://www.youtube.com/watch?v=PIFzRuDeK4M",
+		"description": "In this tutorial, Fionna shows how to make a UI World Options panel using CyanTrigger for VRChat's SKD3 worlds.  It will cover Post Processing options such as Bloom and Brightness, background audio volume, and toggles for things such as pickups, particles, and chairs.",
+		"timestamp": "2021-10-13T02:47:51Z"
+	},
+	{
+		"id": "77a22b6e6b7e8238bddf685fd931406f8568e737",
+		"name": "How to easily join meshes and materials using TexTools and Blender",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=TmefA9ODoKA",
+		"description": "A simple guide to joining meshes and how to use TexTools to combine materials.",
+		"timestamp": "2021-10-11T05:55:59Z"
+	},
+	{
+		"id": "e69bfa1cd652826f045333209a8325d29ae96ee4",
+		"name": "Dance with your avatars",
+		"creator": "Tony_Lewis",
+		"link": "https://drive.google.com/file/d/1p9t4CPoxMi2X7RYFtiBk-AE3TrQNGQ0h/view?usp=sharing",
+		"description": "How to make your avatar support MMD Dance World fully. With this guide, you can make your avatar animate fully including face gesture and mouth movement.",
+		"timestamp": "2021-10-09T16:50:25Z"
+	},
+	{
+		"id": "4427f815a81430914988cd9cb56e20fb8e7f8fd0",
+		"name": "World UI Setup Guide",
+		"creator": "akalink",
+		"link": "https://ask.vrchat.com/t/world-ui-setup-guide-udon-worlds/7279",
+		"description": "a text guide to setting up the UI canvas to be interactable within a udon world.",
+		"timestamp": "2021-10-05T04:49:54Z"
+	},
+	{
+		"id": "3f61e494d45e1d706aeca6a620f1e1d41d1ab1c2",
+		"name": "Blender Clothing (cloth simulation) Mega Tutorial",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=7ULae_1GVpc",
+		"description": "A guide for getting into cloth simulation. A text tutorial is included.",
+		"timestamp": "2021-09-08T05:46:23Z"
+	},
+	{
+		"id": "c1ac280fedf8712c718f9eb27efb7720a98df11a",
+		"name": "Av 3.0 head prop constraint guide",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=SX4T0-e8JDc",
+		"description": "a guide to implementing props you can see locally that are attached to your head and you can move about your avatar.",
+		"timestamp": "2021-09-01T21:07:03Z"
+	},
+	{
+		"id": "be401ff3e4a91be24bf84e86177cc251a52c7ea1",
+		"name": "Eatable Food with CyanTrigger",
+		"creator": "Fionna",
+		"link": "https://www.youtube.com/watch?v=eADLJnd4PMM",
+		"description": "Build an eatable food prefab from scratch, using the CyanTrigger system",
+		"timestamp": "2021-08-17T06:32:41Z"
+	},
+	{
+		"id": "36e0f11747c1cac76a2bfc5f2bbd31d8205d29bd",
+		"name": "Full Time Zones data with city positions",
+		"creator": "Tony_Lewis",
+		"link": "https://drive.google.com/file/d/1ZKZM-FnIWStCvzS-yRddnndk8j2m3Vin/view?usp=sharing",
+		"description": "All of time zones format include quest support with location of 1 of city/town included.",
+		"timestamp": "2021-07-27T04:53:44Z"
+	},
+	{
+		"id": "06c63da87177c7c4c33fddd26cd7347136f56e0e",
+		"name": "Udon/U# + Test Driven Development",
+		"creator": "Guribo",
+		"link": "https://www.youtube.com/watch?v=-ZeJ_-KkUvU",
+		"description": "This tutorial covers some basics of testing in Unity and specifically targets world creation using the VRChat SDK and Udon in combination with Udon Sharp created by Merlin. Additionally CynEmu is used to play-test the created UdonBehaviour script in the Unity Editor.",
+		"timestamp": "2021-07-26T01:04:05Z"
+	},
+	{
+		"id": "ca35b6278d30dee3448ec0bb3bf7f98147ca5727",
+		"name": "orels1's Tool Selection",
+		"creator": "orels1",
+		"link": "https://orels.sh/p/tools/",
+		"description": "A list of tools I either made myself, use everyday, or can recommend overall. Feel free to ask questions about any of them",
+		"timestamp": "2021-07-22T09:44:22Z"
+	},
+	{
+		"id": "dfeff53a40b750c474767f60bf8ced74c0abf5cf",
+		"name": "Audio Demo",
+		"creator": "Text Logo",
+		"link": "https://vrchat.com/home/launch?worldId=wrld_40ba745f-3360-4e50-8e88-aba1b56ffaa3",
+		"description": "A world to demonstrate audio sources and Udon audio tools․",
+		"timestamp": "2021-06-04T01:05:37Z"
+	},
+	{
+		"id": "5b6065c0db2674001c58c94fcd76afa224a9fe8f",
+		"name": "Prefabs TLX Talks Archive",
+		"creator": "orels1",
+		"link": "https://tlx.dev/talks",
+		"description": "A searchable archive of the talks from the Prefabs TLX event",
+		"timestamp": "2021-02-02T00:21:28Z"
+	},
+	{
+		"id": "7fe9e94fa4a9640bb3b574be9ad1343a5b26a842",
+		"name": "How to Atlas Everything in your World",
+		"creator": "Maebbie",
+		"link": "https://www.youtube.com/watch?v=urrhgBHVYGQ\u0026list=PLHPl0SFKkUjNcC8r3tLFW1-WCdNCAAFjV",
+		"description": "Hard-optimize your World by UV mapping everything on the same texture atlas, including tiling textures. This will retain high levels of detail and an extremely low drawcall count as you have seen prominently in the worlds Eventide and Atoll of Ether.",
+		"timestamp": "2021-02-01T11:33:55Z"
+	},
+	{
+		"id": "cb4a2b1db00fa42db10f5455190ebed5a06dec0e",
+		"name": "Animate NPCs in your world with MOCAP",
+		"creator": "Ruuubick",
+		"link": "https://youtu.be/r8YpXP0RlZc",
+		"description": "Tutorial combining ShaderMotion and WorldConstraint to enable people to use FBT to record animations within VRChat and then generate animation files in Unity.",
+		"timestamp": "2021-01-13T21:56:08Z"
+	},
+	{
+		"id": "c3bb9ee3a018d1b69e8eb38f2e51ed10e4b93c02",
+		"name": "Optimizing your VR/AR Experiences",
+		"creator": "Unity Technologies",
+		"link": "https://learn.unity.com/tutorial/optimizing-your-vr-ar-experiences#",
+		"description": "How to optimize VR and AR experiences in Unity. demo is in 2019 but use as ref for idea.",
+		"timestamp": "2020-12-31T10:22:41Z"
+	},
+	{
+		"id": "4b7bb3b56f2effefbbf30cbe90ec94363696602e",
+		"name": "Occlusion Culling and You",
+		"creator": "Silent",
+		"link": "https://gitlab.com/s-ilent/SCSS/-/wikis/Other/Occlusion-Culling",
+		"description": "Occlusion culling is a complicated topic, and pretty easy to misunderstand. With this guide, I'm hoping I can give people a better idea of when and where to use it.",
+		"timestamp": "2020-12-17T19:24:41Z"
+	},
+	{
+		"id": "b0f071eb18e0c5f4faed7d4c29ffd74dc0c9278a",
+		"name": "Bakery (Manual)",
+		"creator": "Mr.F",
+		"link": "https://geom.io/bakery/wiki/index.php?title=Manual",
+		"description": "General usage reference for Bakery Lightmapper",
+		"timestamp": "2020-12-13T04:14:06Z"
+	},
+	{
+		"id": "d74efd4a07d4d41b5064a985d1ffe7aa0066d958",
+		"name": "Level Design -In Pursuit of Better Levels-",
+		"creator": "Alex",
+		"link": "https://docs.google.com/document/d/1fAlf2MwEFTwePwzbP3try1H0aYa9kpVBHPBkyIq-caY/edit",
+		"description": "Level Design document where I gather useful senior dev knowledge.\nThe goal was to gather up all this knowledge in one place. Both for learning and as reference.",
+		"timestamp": "2020-12-13T04:12:38Z"
+	},
+	{
+		"id": "a9f2dc605d663916d6870c960952fa505df0d806",
+		"name": "2 hand guns with constraints for vrchat 2018 unity",
+		"creator": "HelloHa?",
+		"link": "https://www.youtube.com/watch?v=awbycTTZMJY\u0026ab_channel=HelloHa%3F",
+		"description": "How to set up 2 handed guns in VRChat using constraints.",
+		"timestamp": "2020-11-21T08:20:43Z"
+	},
+	{
+		"id": "ad859274414e0b1fcd8549cd081ebd8cd067a9eb",
+		"name": "FreezeFrame your avatar in VRChat (Unity 2018)",
+		"creator": "HelloHa?",
+		"link": "https://www.youtube.com/watch?v=tR3RlelXyvU\u0026ab_channel=HelloHa%3F",
+		"description": "This is how to Freeze your avatar in place and simply walk away using constraints",
+		"timestamp": "2020-11-21T08:18:44Z"
+	},
+	{
+		"id": "b06ddecff0554a41b6120fd1f59567a07e2b2292",
+		"name": "VRChat Baked Lighting Tutorial",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=dKgUJccjWRU\u0026feature=youtu.be",
+		"description": "a lighting tutorial for those who have never baked lighting before as well as those who have baked lighting and don't understand it well.",
+		"timestamp": "2020-09-24T05:50:30Z"
+	},
+	{
+		"id": "163a7f14c433ff1f92c3bb2718e571bc25a1920e",
+		"name": "MIDI and OSC Trigger Tutorial",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=BnHlyqvqbSs\u0026t=13s",
+		"description": "A quick guide to setting up midi and osc in sdk2, and how to set up reaper to control the midi triggers.",
+		"timestamp": "2020-09-18T05:59:09Z"
+	},
+	{
+		"id": "c56bc007c30399b3f249e894fbd096446a309f49",
+		"name": "How to setup your birthday on Birthday Bot?",
+		"creator": "Tony_Lewis",
+		"link": "https://drive.google.com/file/d/1-3fYunuz82DuWIu8TAKZjip1HraKj8-9/view?usp=sharing",
+		"description": "Quick guide of how to setup Birthday Bot on VRCPrefab",
+		"timestamp": "2020-08-28T22:21:42Z"
+	},
+	{
+		"id": "be1d4af24203c28874dbcf49340e9334dabee6fe",
+		"name": "Reflection Probes and Unity",
+		"creator": "Silent",
+		"link": "https://gitlab.com/s-ilent/SCSS/-/wikis/Other/Reflection-Probes",
+		"description": "A guide on using Reflection Probes in worlds.",
+		"timestamp": "2020-08-26T06:51:00Z"
+	},
+	{
+		"id": "ddfc4e8471ce33a2375f0e91e8d01fddd624f37e",
+		"name": "Avatars 3.0 Base Layer Written Guide",
+		"creator": "Child of the Beast",
+		"link": "https://vrcudon.com/tutorials/avatars/avatars-3-0-setup/base-layer/",
+		"description": "A written guide on Animation controllers and the Base Layer for Avatars 3.0",
+		"timestamp": "2020-08-24T13:40:29Z"
+	},
+	{
+		"id": "c266bc4a2a446ea6e759eb96b1a7e07d023f2895",
+		"name": "Avatar 3.0 written setup guide",
+		"creator": ".necro",
+		"link": "https://vrcudon.com/tutorials/avatars/avatars-3-0-setup/",
+		"description": "A written guide on setting up Avatars 3.0",
+		"timestamp": "2020-08-24T13:38:38Z"
+	},
+	{
+		"id": "331eb0518a4835ce367d79cccbb255527aba5d54",
+		"name": "(For v2.1.2.1) How to make QV Pen compatible with Oculus Quest?",
+		"creator": "Tony_Lewis",
+		"link": "https://drive.google.com/file/d/1lD2VuvDgGytKgLxn4RCGOe5E0MvRFrTB/view?usp=sharing",
+		"description": "Updated version of customise to make QvPen compatible for version 2.1.2.1 due to version change.",
+		"timestamp": "2020-08-03T23:56:47Z"
+	},
+	{
+		"id": "15464f90687569d5a14a2ab725f923984f1676ac",
+		"name": "How to make QV Pen compatible with Oculus Quest?",
+		"creator": "ureishi",
+		"link": "https://drive.google.com/file/d/15g9csHwTNbdegAvOtt9Tkko0yobg6Ifc/view?usp=sharing",
+		"description": "Make QV Pen Prefab compatible with Oculus Quest",
+		"timestamp": "2020-08-03T02:07:26Z"
+	},
+	{
+		"id": "9694066e2a2bfb6467289a630768ba23c49ed9e7",
+		"name": "Dynamic Bones Settings and Optimization",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=TecWXo1C9l8\u0026t=95s",
+		"description": "a brief overview of how to get some good looking dynamic bones and how to bring it into blender to optimize it.",
+		"timestamp": "2020-07-18T04:02:23Z"
+	},
+	{
+		"id": "00ebd17efa4f1f81c925e844027dc2572bcd1459",
+		"name": "Unity Lighting Reference Card",
+		"creator": "Unity Technologies",
+		"link": "https://docs.google.com/spreadsheets/d/1v-LnDOJcsSsa0ViF7kBs6xgY9Q_z-1k6h95LE0lf46U/",
+		"description": "A reference card for lighting modes. Remember that Directional mode uses twice as much texture memory as Non-directional mode and has a slightly higher shading cost. One cheap RT Dir light w/o shadows and indirect is ok instead.",
+		"timestamp": "2020-06-30T23:58:12Z"
+	},
+	{
+		"id": "e452e41404f2e8ba83d6b8b0874b70bd85ff6f1a",
+		"name": "How To install VirtualLens and EmoteSwitch",
+		"creator": "Lhun",
+		"link": "https://imgur.com/gallery/qKVJrGg",
+		"description": "A basic text tutorial on installing virtuallens to your avatar using emoteswitch",
+		"timestamp": "2020-06-28T00:04:43Z"
+	},
+	{
+		"id": "0b8078d9692dc69619526dc649caca4546e67070",
+		"name": "Clip-Art to 3d, the easy way",
+		"creator": "Lhun",
+		"link": "https://imgur.com/gallery/U2aGFJY",
+		"description": "Using an example of making a braid for hair, I go over how to inflate clip art to rapidly prototype a mesh. Many things such as pins, signs, logos etc are less steps.",
+		"timestamp": "2020-06-25T16:29:10Z"
+	},
+	{
+		"id": "f3fc75dae1f5505c26bbf8eac7d6cf1ffa63c341",
+		"name": "Digging old projects from shed",
+		"creator": "Tony_Lewis",
+		"link": "https://docs.google.com/document/d/1vQHv4D4dLFpGD0fVf5FSDB6wytMu7X5EmM_YlmWVtUY/edit?usp=sharing",
+		"description": "Points to check when considering to update Unity 6.x/5.x project to latest Unity version supported by VRChat.",
+		"timestamp": "2020-06-12T16:53:38Z"
+	},
+	{
+		"id": "34223f1af4622bc6a32c782a3565caa0f808c880",
+		"name": "How to bring VRM avatar to VRChat?",
+		"creator": "Tony_Lewis",
+		"link": "https://drive.google.com/file/d/1exgRcFov4Oqf-szzZIBwItnd5jcKIEkD/view?usp=sharing",
+		"description": "Way to convert VRM model to VRChat format",
+		"timestamp": "2020-05-28T18:04:55Z"
+	},
+	{
+		"id": "d1dd51d922967ee78c641f4ea6df16f95c2e449b",
+		"name": "How to take your avatar with you?",
+		"creator": "Tony_Lewis",
+		"link": "https://drive.google.com/file/d/1hebv8-7xTVc0ninj6IsBc9ZQ1MPBpWqv/view?usp=sharing",
+		"description": "Instructions to convert your avatars into VRM format to use with 3rd party platform.",
+		"timestamp": "2020-05-28T14:14:38Z"
+	},
+	{
+		"id": "49f0d4858894eecab79912818d2eab26ea1aefe7",
+		"name": "Animator Trigger Overloader Tutorial",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=dRwVkCdpAhc\u0026feature=youtu.be",
+		"description": "How to prevent animation triggers from over-firing.",
+		"timestamp": "2020-03-16T00:41:21Z"
+	},
+	{
+		"id": "7e6ef053b4d4fc16f9cc0aeaa701ce7ac7e88b97",
+		"name": "Getting Started with UdonPie  - the Python-based UDON-assembly compiler",
+		"creator": "orels1",
+		"link": "https://ask.vrchat.com/t/getting-started-with-udonpie-the-python-based-udon-assembly-compiler/384",
+		"description": "An introductory guide to UdonPie language and compiler as well as some nice tips that will improve your development experience using it",
+		"timestamp": "2020-02-04T18:11:04Z"
+	},
+	{
+		"id": "cbfc80d9f9e37b85696dfe1f6268cd71a6c00848",
+		"name": "General How To playlist for Beginners",
+		"creator": "Lhun",
+		"link": "https://www.youtube.com/watch?v=SRRt2gZOg_Q\u0026list=PLhu4TNERIYMt-wCEF1syqcE9FKjBG4RW5",
+		"description": "Rapid fire tutorials to ease new players into content creation",
+		"timestamp": "2019-12-09T15:53:30Z"
+	},
+	{
+		"id": "cab35180f590d5cf7f5741cf3985780b592a5885",
+		"name": "Swap baked Lightmaps (for Day \u0026 Night mode on Quest \u0026 PC)",
+		"creator": "Maebbie",
+		"link": "https://www.youtube.com/watch?v=VLU6A4JWsWk\u0026list=PLHPl0SFKkUjNIZs5K9BV4pgXiLrQpEu2D",
+		"description": "Tutorial on how to swap out baked lightmaps in #VRChat , as you have seen with the Day \u0026 Night mode toggle in Atoll of Ether.",
+		"timestamp": "2019-11-14T03:39:06Z"
+	},
+	{
+		"id": "af9a76e608b6576a3530727f0d9dd474a93a0490",
+		"name": "How to use Audio Filters like a Champ",
+		"creator": "akalink",
+		"link": "https://docs.google.com/document/d/10n7SXJB-NpiNch8CI2IGwKUtWsabCjtX_3qBuFu9EsE",
+		"description": "A basic rundown on how to achieve world audio effects.",
+		"timestamp": "2019-10-11T21:49:56Z"
+	},
+	{
+		"id": "6145db068186dde16338008f226a273aa3265377",
+		"name": "Offset collision",
+		"creator": "Phasedragon",
+		"link": "https://drive.google.com/file/d/1bteDi9BcDv_787aViZoosPkaTs8OxE-3/view?usp=sharing",
+		"description": "Requires standard assets. Simple prefab and readme that shows how to set up offset collision in order to have effectively infinite unique detectable objects, such as keys and keyholes.",
+		"timestamp": "2019-08-16T21:30:37Z"
+	},
+	{
+		"id": "4b12d003744598df3b93acc9476f41754667f8f6",
+		"name": "Baking terrain, fixing black grass",
+		"creator": "akalink",
+		"link": "https://youtu.be/ESGUg7SKmRU",
+		"description": "I go over a basic work around to bake light and still use grass in unity terrain system in vrchat",
+		"timestamp": "2019-07-30T05:02:34Z"
+	},
+	{
+		"id": "17cb86741336f42ea7462f1ff9006951886bbc02",
+		"name": "Avatar Skin Recoloring",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=nUR9a2NJpo8\u0026feature=youtu.be",
+		"description": "shows you how to recolor the skin on avatar easily with gimp",
+		"timestamp": "2019-07-20T22:13:27Z"
+	},
+	{
+		"id": "f603c4e5bb2d53582c02a88cda68dc5d5550850c",
+		"name": "Making a Theater in VRChat or: How The Vantage Works",
+		"creator": "OwlBoy",
+		"link": "http://thegreatpug.com/vrchat-making-a-theater/",
+		"description": "An overview of various features of The Vantage and tips for encoding video to playback in a theater in VRChat.",
+		"timestamp": "2019-07-18T00:43:15Z"
+	},
+	{
+		"id": "fb7bfd88cd9e27c315bd7d95d9db8771a8b14207",
+		"name": "Substance Designer overview for vr chat",
+		"creator": "El Fideo Rubio",
+		"link": "https://www.youtube.com/watch?v=_B6_-hgPM6A",
+		"description": "This is an overview to showcase the power of substance designer and how you could use it to texture your assets in your world.",
+		"timestamp": "2019-02-10T18:25:12Z"
+	},
+	{
+		"id": "3cbf28238a75ffef596e59ceac5b1ba979e7a38c",
+		"name": "Avatar Eyetracking Doc",
+		"creator": "?",
+		"link": "https://docs.google.com/document/d/1BvX_OdEilbJ7wEcvd5MRA1g29NGCAp3G3nHGp73t_CQ",
+		"description": "Guide for avatar eye tracking setup",
+		"timestamp": "2019-01-19T01:55:23Z"
+	},
+	{
+		"id": "c280a3edcff0723de47a4ce7b5a56f5d7e318293",
+		"name": "Posable Doll in VRChat",
+		"creator": "Q",
+		"link": "https://docs.google.com/document/d/1Hq6AsQxeEyjtN9DmG512NU-mcD5XbT5TYmKRMcJDFDQ",
+		"description": "A quick write down of how I made the Posable Doll that Mimi has in Avatar Testing",
+		"timestamp": "2018-11-19T06:55:23Z"
+	},
+	{
+		"id": "0a178648ac37364beda524195cd6db833cc1aef6",
+		"name": "Audio Optimization for VRChat Video Guide",
+		"creator": "akalink",
+		"link": "https://www.youtube.com/watch?v=stPh3N3SH5Q\u0026feature=youtu.be",
+		"description": "A guide that explains what setting should be used for audio and why it is important",
+		"timestamp": "2018-11-17T20:04:39Z"
+	},
+	{
+		"id": "8b2d0a802009a1acd473ce9bc11daf1ffc2d472c",
+		"name": "Post Processing and You",
+		"creator": "Silent",
+		"link": "https://gitlab.com/s-ilent/SCSS/wikis/Other/Post-Processing",
+		"description": "A guide explaining the installation, setup, and use of post processing, with details you'll struggle to find anywhere else! Despite the name, setting up post processing early in your map creation can make all the difference in your lighting! Why? Well, read the guide to find out.",
+		"timestamp": "2018-10-31T10:43:33Z"
+	},
+	{
+		"id": "a599f994f676f185106c2249dfab01fa5d0d6f04",
+		"name": "Sprite/Pixel Avatars without blender",
+		"creator": "Akalink",
+		"link": "https://youtu.be/IsYfTway-Y4",
+		"description": "A tutorial on how to create sprite avatars with just unity",
+		"timestamp": "2018-10-24T22:16:59Z"
+	},
+	{
+		"id": "d3d6bdca8607ec626a310503404970b93b914f78",
+		"name": "VRChat World Trigger Video Tutorials",
+		"creator": "CyanLaser",
+		"link": "https://www.youtube.com/playlist?list=PLIoLQ-8wanr9jQWDUIs_2zshaDD_Lg-9R",
+		"description": "Video tutorials going over different VRChat triggers mechanics",
+		"timestamp": "2018-10-24T10:26:35Z"
+	}
+]
