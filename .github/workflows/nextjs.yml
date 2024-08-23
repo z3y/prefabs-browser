@@ -25,7 +25,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
   update:
     runs-on: ubuntu-latest
     defaults:
@@ -43,6 +42,7 @@ jobs:
       - run: cp -r ./json-builder/output/*.json ./frontend/public/output/
 
   build:
+    needs: update
     runs-on: ubuntu-latest
     defaults:
       run:
