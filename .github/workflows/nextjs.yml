@@ -39,7 +39,7 @@ jobs:
           cache-dependency-path: |
             ./json-builder/go.sum
       - run: go run ./main.go --fetch
-      - run: cp -r ./json-builder/output/*.json ./frontend/public/output/
+      - run: cp -r ./output/*.json ../frontend/public/output/
 
   build:
     needs: update
