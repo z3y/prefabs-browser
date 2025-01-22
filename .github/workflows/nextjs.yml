@@ -5,7 +5,7 @@
 name: Deploy Next.js site to Pages
 
 on:
-  # Run every day
+  # Run every week
   schedule:
     - cron: "0 0 * * 0"
 
